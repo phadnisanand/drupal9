@@ -1,0 +1,16 @@
+welcome_module.list:
+  path: '/welcome/page'
+  defaults:
+    _controller: '\Drupal\welcome_module\Controller\WelcomeController::welcome'
+    _title: 'Welcome to My Module in Drupal 9'
+  requirements:
+    _permission: 'access content'
+
+
+welcome_module.admin.config:
+  path: '/admin/config/welcome_module/settings'
+  defaults:
+    _form: '\Drupal\welcome_module\Form\ExampleSettingsForm'
+    _title: 'example'
+  requirements:
+    _permission: 'administer site configuration'

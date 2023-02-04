@@ -1,0 +1,6 @@
+welcome_module.admin:
+  title: 'Welcome Module settings'
+  description: 'welcome_module'
+  parent: system.admin_config_development
+  route_name: welcome_module.admin.config
+  weight: 100
