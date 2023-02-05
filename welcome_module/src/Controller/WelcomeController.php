@@ -47,9 +47,9 @@ class WelcomeController extends ControllerBase implements ContainerInjectionInte
 
   public function welcome() {  
 
-    $config = $this->configFactory->get('welcome_module.settings');
+    $config = $this->configFactory->get('welcome_module.settings_advanced');
 // Will print 'Hello'.
-print $config->get('message');
+print $config->get('site.title');
 // Will print 'en'.
 
 

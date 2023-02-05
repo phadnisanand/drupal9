@@ -1,0 +1,7 @@
+site:                   # array containing our data
+  title: ''             # simple text field (nested)
+  content:
+    value: ''           # ckeditor content
+    format: basic_html  # ckeditor format
+mails: { }              # Values, formated as array, transformed from the textarea
+entity_reference: ''    # entity reference field

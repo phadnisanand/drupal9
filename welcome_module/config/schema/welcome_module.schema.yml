@@ -5,3 +5,57 @@ welcome_module.settings:
     message:
       type: text
       label: 'Message'
+
+welcome_module.simple_settings:
+  type: config_object
+  label: 'My module basic settings'
+  mapping:
+    title:
+      label: 'Title'
+      type: label
+    select:
+      label: 'Select'
+      type: string
+    checkbox:
+      label: 'Checkbox'
+      type: boolean
+    checkboxes:
+      label: 'Checkboxe'
+      type: sequence
+    radios:
+      label: 'Radios'
+      type: string
+    message:
+      label: 'Message'
+      type: text
+    ckeditor:
+      label: 'Ckeditor'
+      type: text_format
+    language:
+      type: string
+      label: 'Language code'
+
+welcome_module.settings_advanced:
+  type: config_object
+  label: 'My module advanced settings'
+  mapping:
+    site:
+      label: 'Site'
+      type: mapping
+      mapping:
+        title:
+          label: 'Title'
+          type: label
+        content:
+          label: 'Content'
+          type: text_format
+    mails:
+      label: ‘Mails’
+      type: sequence
+    entity_reference:
+      label: Entity reference
+      type: mapping
+      mapping:
+        target_id:
+          type: string
+          label: 'Value'

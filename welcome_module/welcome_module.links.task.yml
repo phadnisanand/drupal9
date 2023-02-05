@@ -2,3 +2,8 @@ welcome_module.admin.config:
   route_name: welcome_module.admin.config
   title: Settings
   base_route: welcome_module.admin.config
+
+welcome_module.settings_advanced:
+  route_name: welcome_module.settings_advanced
+  title: Settings Advanced
+  base_route: welcome_module.settings_advanced

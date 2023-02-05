@@ -3,3 +3,15 @@ welcome_module.admin.config:
   base_route_name: welcome_module.admin.config
   names:
     - welcome_module.settings
+
+welcome_module.simple_settings:
+  title: 'My module basic settings'
+  base_route_name: welcome_module.simple_settings
+  names:
+    - welcome_module.simple_settings
+
+welcome_module.settings_advanced:
+  title: 'My module advanced settings'
+  base_route_name: welcome_module.settings_advanced
+  names:
+    - welcome_module.settings_advanced

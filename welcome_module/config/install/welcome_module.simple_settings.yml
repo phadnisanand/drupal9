@@ -1,0 +1,10 @@
+langcode: en
+title: ''
+select: ''
+checkbox: FALSE
+checkboxes: { }
+radios: ''
+message: ''
+ckeditor:
+  value: ''
+  format: 'basic_html'

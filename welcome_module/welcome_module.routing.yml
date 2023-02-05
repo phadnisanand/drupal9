@@ -14,3 +14,20 @@ welcome_module.admin.config:
     _title: 'example'
   requirements:
     _permission: 'administer site configuration'
+
+
+welcome_module.simple_settings:
+  path: '/admin/config/welcome_module/simple_settings'
+  defaults:
+    _form: '\Drupal\welcome_module\Form\SettingsForm'
+    _title: 'example'
+  requirements:
+    _permission: 'administer site configuration'
+
+welcome_module.settings_advanced:
+  path: '/admin/config/welcome_module/complex_settings'
+  defaults:
+    _form: '\Drupal\welcome_module\Form\SettingsAdvancedForm'
+    _title: 'example'
+  requirements:
+    _permission: 'administer site configuration'

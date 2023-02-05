@@ -4,3 +4,19 @@ welcome_module.admin:
   parent: system.admin_config_development
   route_name: welcome_module.admin.config
   weight: 100
+
+welcome_module.simple_settings:
+  title: 'Welcome Module simple settings'
+  description: 'Welcome Module simple settings'
+  route_name: welcome_module.simple_settings
+  parent: system.admin_config_development
+  base_route: welcome_module.simple_settings
+  weight: 101
+
+welcome_module.settings_advanced:
+  title: 'Welcome Module Advanced settings'
+  description: 'Welcome Module Advanced settings'
+  route_name: welcome_module.settings_advanced
+  parent: system.admin_config_development
+  base_route: welcome_module.settings_advanced
+  weight: 102
