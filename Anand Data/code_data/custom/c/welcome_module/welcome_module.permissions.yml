@@ -1,0 +1,3 @@
+static permission:
+  title: 'View Rest data'
+  description: 'Gives static permission.'

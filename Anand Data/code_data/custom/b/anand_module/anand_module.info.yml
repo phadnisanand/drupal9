@@ -1,0 +1,6 @@
+name: anand Module
+type: module
+description: 'AJAX demo.'
+package: Core
+core_version_requirement: ^8 || ^9
+version: '9.5.0'

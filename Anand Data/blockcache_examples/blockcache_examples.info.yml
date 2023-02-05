@@ -1,0 +1,7 @@
+name: Blockcache examples
+type: module
+description: Example scripts of block caching strategies
+core_version_requirement: ^8 || ^9
+package: Block
+dependencies:
+  - drupal:block

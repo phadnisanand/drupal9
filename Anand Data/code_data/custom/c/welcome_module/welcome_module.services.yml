@@ -1,0 +1,9 @@
+services:
+  welcome_module.custom_services:
+    class: Drupal\welcome_module\CustomService
+    arguments: ['@current_user','@http_client_factory','@language_manager','@current_route_match','@path.current','@path.validator','@entity_type.manager']
+
+  welcome_module.event_subscriber_example:
+    class: Drupal\welcome_module\EventSubscriber\ExampleEventSubScriber
+    tags:
+      - { name: 'event_subscriber' }

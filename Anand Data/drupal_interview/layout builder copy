@@ -1,0 +1,22 @@
+layout builder
+ajax commands
+jquery document
+--------------------------------------------------------------------------------------------------------------------
+https://www.electriccitizen.com/citizen-blog/mastering-drupal-8-multilingual-part-2-3
+https://www.drupal.org/docs/user_guide/en/language-concept.html
+language module=> allow  additional language to add to the site
+content translation ->  allows entities and there filed to be translatable
+Configuation translation-> Provides translation for views, labeles, site settings 
+Interface translation-> adds a UI for translating module and core text. adds a UI for translating custom Twig and module text strings and the administration interface.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+https://climbtheladder.com/dependency-injection-interview-questions/
+dependency injection in PHP design pattern.
+dependency injection provide resuablity and reduce code duplication
+In dependency injection we can pass object of one class as a dependency to another class. which other class need to inject in the consructor and
+then it can use methods with in that class.
+Dependency Injection is a technique for decoupling software components. helps to decouple code dependencies from each other. 
+Constructor injection is a type of dependency injection where dependencies are injected into an object via its constructor. This is generally used when the dependencies are required for the object to function properly, as opposed to being injected later on.
+controller, Form , Block -> dependecy injection-
+use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
+create() factory method to pass the dependencies into the class constructor. 
+Controllers, forms, and blocks are not defined via the *.services.yml file

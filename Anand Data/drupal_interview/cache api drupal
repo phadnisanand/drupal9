@@ -1,0 +1,91 @@
+cache api drupal
+
+1) cache tags
+node:5
+user:3
+node_list
+
+
+node:5 — cache tag for Node entity 5 (invalidated whenever it changes)
+user:3 — cache tag for User entity 3 (invalidated whenever it changes)
+node_list — list cache tag for Node entities (invalidated whenever any Node entity is updated, deleted or created, i.e., when a listing of nodes may need to change). Applicable to any entity type in following format: {entity_type}_list.
+node_list:article — list cache tag for the article bundle (content type). Applicable to any entity + bundle type in following format: {entity_type}_list:{bundle}.
+config:node_type_list — list cache tag for Node type entities (invalidated whenever any content types are updated, deleted or created). Applicable to any entity type in the following format: config:{entity_bundle_type}_list.
+config:system.performance — cache tag for the system.performance configuration
+library_info — cache tag for asset libraries
+
+
+----------------------------------------------------------------------
+
+2) cache context-
+cookies
+  :name
+headers
+  :name
+ip
+languages
+  :type
+protocol_version // Available in 8.9.x or higher.
+request_format
+route
+  .book_navigation
+  .menu_active_trails
+    :menu_name
+  .name
+session
+  .exists
+theme
+timezone
+url
+  .path
+    .is_front // Available in 8.3.x or higher.
+    .parent
+  .query_args
+    :key
+    .pagers
+      :pager_id
+  .site
+user
+  .is_super_user
+  .node_grants
+    :operation
+  .permissions
+  .roles
+    :role
+----------------------------------------------------------------------
+https://www.adcisolutions.com/knowledge/cache-drupal-8
+https://www.valuebound.com/resources/blog/a-beginners-guide-to-caching-drupal-8
+https://www.srijan.net/resources/blog/the-fundamentals-of-caching-in-drupal-8
+https://github.com/x-team/Drupal-8-Examples
+
+------------------------------------------------------------------------------------------------------------
+https://www.srijan.net/resources/blog/the-fundamentals-of-caching-in-drupal-8
+
+Internal Page Caching -> anonomous users
+Internal Dynamic Page Cache -> all users
+
+Caching At Different Layers->
+Application-level Caching
+Component-level Caching
+Page-level Caching
+
+
+Cache Tags  are used to nullify cache entries when something on the site undergoes modification
+For example, the cache tag ‘node:5’ gets invalidated any time the Drupal content node with ID 5 gets modified.
+node_list: List cache tags for node entities
+
+
+Cache Contexts: 
+Cache contexts are stored alongside cache entries and are designed to let content vary depending on what circumstances or situation it is showcased in.
+
+
+Cache max-age is the last step to handle cache invalidation. You have to simply set the time on how long the content should be cached for. This can vary from 0 seconds (to not cache content at all) to as long as you want. 
+set the time on how long the content should be cached for.
+CACHE::PERMANANT
+------------------------------------------------------------------------------------------------------------
+
+https://medium.com/@joshirohit100/cache-context-drupal-8-part-1-55303ec665ce
+https://www.sitepoint.com/exploring-cache-api-drupal-8/
+https://www.codimth.com/blog/web/drupal/how-use-cache-api-drupal-8
+
+https://www.codimth.com/blog/web/drupal/how-invalidate-cache-drupal-8

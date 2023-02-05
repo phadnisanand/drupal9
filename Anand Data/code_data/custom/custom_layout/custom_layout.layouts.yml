@@ -1,0 +1,27 @@
+custom_layout:
+ label: 'Custom Layout'
+ path: layouts/custom_layout
+ category: 'Custom Layouts'
+ template: custom-layout
+ library: custom_layout/custom_layout
+ default_region: content
+ icon_map:
+   - [header_left, header_left, header_right]
+   - [content, content, sidebar]
+   - [content, content, sidebar]
+   - [content, content, sidebar]
+   - [footer_left, footer_right]
+
+ regions:
+   header_left:
+     label: Header Left
+   header_right:
+     label: Header Right
+   sidebar:
+     label: Sidebar
+   content:
+     label: Content
+   footer_left:
+     label: Footer Left
+   footer_right:
+     label: Footer Right

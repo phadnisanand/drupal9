@@ -1,0 +1,8 @@
+name: Custom Plugin
+type: module
+description: 'custom plugin demo.'
+package: Core
+core_version_requirement: ^8 || ^9
+version: '9.5.0'
+project: 'drupal'
+datestamp: 1671115927

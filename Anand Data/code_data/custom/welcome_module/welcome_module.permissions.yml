@@ -1,0 +1,8 @@
+static permission:
+  title: 'View Rest data'
+  description: 'Gives static permission.'
+
+access welcome information:
+  description: 'acccess welcome module.'
+  title: 'Access developer information'
+  restrict access: TRUE

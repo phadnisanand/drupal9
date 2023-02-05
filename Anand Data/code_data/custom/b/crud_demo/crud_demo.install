@@ -1,0 +1,29 @@
+<?php
+
+function crud_demo_schema() {
+  $schema['custom_table'] = array(
+    'description' => 'A table to store sample data',
+    'fields' => array(
+      'id' => array(
+      'description' => 'Holds the id value',
+      'type' => 'serial',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+      ),
+      'name' => array(
+        'description' => 'Name',
+        'type' => 'varchar',
+        'length' => '50',
+        'not null' => TRUE,
+      ),
+      'age' => array(
+        'description' => 'Age',
+        'type' => 'varchar',
+        'length' => '50',
+        'not null' => TRUE,
+      ),
+    ),  
+    'primary key' => array('id'), 
+  );  
+  return $schema;
+}

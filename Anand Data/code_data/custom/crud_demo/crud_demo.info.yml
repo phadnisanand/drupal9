@@ -1,0 +1,5 @@
+name: 'Crud demo'
+type: module
+description: 'CRUD demo'
+core_version_requirement: ^8 || ^9
+package: 'Custom'

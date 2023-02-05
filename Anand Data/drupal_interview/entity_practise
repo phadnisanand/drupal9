@@ -1,0 +1,57 @@
+
+https://www.drupaleasy.com/blogs/ultimike/2020/07/entityquery-examples-everybody
+https://www.drupal.org/docs/drupal-apis/entity-api/working-with-the-entity-api
+https://api.drupal.org/api/drupal/core!lib!Drupal.php/function/Drupal%3A%3AentityQuery
+https://gorannikolovski.com/blog/query-level-filtering-custom-entities-drupal-8
+https://gist.github.com/davidjguru/0567d7e4a4117bf0932555d26e0cafb2
+http://www.yuseferi.com/en/blog/Drupal-entity-API-cheat-sheet
+https://www.metaltoad.com/blog/drupal-8-entity-api-cheat-sheet
+https://drupalsun.com/philipnorton42/2022/04/17/drupal-9-loading-options-option-field
+https://gorannikolovski.com/snippets?page=1
+https://www.codimth.com/blog/web/drupal/drupal-8-get-entity-reference-field-node-programmatically
+http://www.yuseferi.com/en/blog/Drupal-entity-API-cheat-sheet
+http://www.thirstysix.com/drupal-8-entity-query-conditions
+https://www.drupal.org/docs/drupal-apis/entity-api/working-with-the-entity-api
+https://stefvanlooveren.me/blog/how-access-field-value-entity-or-node-object-drupal-8
+https://stefvanlooveren.me/blog/directly-get-title-referenced-entity-drupal-8-or-9
+https://drupal.stackexchange.com/questions/137319/getting-the-image-url-from-a-field-image-on-a-node
+https://www.codimth.com/blog/web/drupal/getting-drupal-8-field-image-twig
+https://www.zedangle.com/blog/how-access-field-value-node-drupal-8
+https://gorannikolovski.com/blog/how-convert-existing-image-fields-media-images
+https://gist.github.com/raphaellarrinaga/c1d71f69873c967ff74f8ec09cbdf9e1
+https://www.drupaleasy.com/blogs/ultimike/2020/07/entityquery-examples-everybody
+
+
+imp 
+https://sarahcodes.medium.com/getting-drupal-8-field-values-in-twig-22b80cb609bd
+http://www.yuseferi.com/en/blog/Drupal-entity-API-cheat-sheet
+https://www.drupal.org/docs/drupal-apis/entity-api/working-with-the-entity-api
+https://drupalsun.com/zhilevan/2017/01/14/query-drupal-8-entityquery
+Get multi value field-
+https://drupalbook.org/faq/how-get-value-multiple-values-field-drupal-8
+https://www.sitepoint.com/drupal-8-version-entityfieldquery/
+
+
+https://drupalbook.org/
+https://drupalsun.com/zhilevan/2017/01/14/query-drupal-8-entityquery
+create own content and config entity
+custom plugin type
+Creating our own custom entity type
+Creating our own custom plugin type
+Writing a custom Drush command
+
+https://spinningcode.org/2017/01/drupal-8-plugins-are-addictive/
+https://gist.github.com/acrosman
+https://drupalize.me/blog/201409/unravelling-drupal-8-plugin-system
+https://www.drupal.org/docs/drupal-apis/plugin-api/creating-your-own-plugin-manager
+https://www.sitepoint.com/drupal-8-custom-plugin-types/
+
+https://www.sitepoint.com/drupal-8-version-entityfieldquery/
+https://gist.github.com/bdlangton/e826276a0c78d9a89d8dec23dd0c7683
+https://www.sitepoint.com/drupal-8-version-entityfieldquery/
+https://www.colinbusby.com/posts/entitytypemanager-querying-nodes
+https://www.colinbusby.com/
+
+Database api-
+https://www.codimth.com/blog/web/drupal/drupal-8-store-data-custom-table
+https://drupalbook.org/drupal/913-working-database-drupal

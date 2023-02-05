@@ -1,0 +1,16 @@
+global-add:
+  version: 1.x
+  js: 
+    js/custom.js: {}
+
+example-library:
+  js:
+    js/example.js: {}
+  dependencies:
+    - core/drupal.ajax
+
+example-library-invoke:
+  js:
+    js/example2.js: {}
+  dependencies:
+    - core/drupal.ajax

@@ -1,0 +1,9 @@
+name: Custom Module
+type: module
+description: 'AJAX demo.'
+package: Core
+core_version_requirement: ^8 || ^9
+version: '9.5.0'
+project: 'drupal'
+datestamp: 1671115927
+configure: welcome_module.settings_form

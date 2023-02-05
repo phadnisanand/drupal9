@@ -1,0 +1,7 @@
+Use Kint in Drupal
+composer require drupal/devel 4.x-dev 
+composer require kint-php/kint
+I selected kint as Variables Dumper in /admin/config/development/devel
+
+{{ kint() }} in a twig file
+https://github.com/kint-php/kint

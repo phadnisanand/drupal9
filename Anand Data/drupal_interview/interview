@@ -1,0 +1,244 @@
+
+global $language and global $user 
+
+Drupal::currentUser()  -> get current user
+Drupal::languageManager()->getCurrentLanguage()  -> get current language
+$user = \Drupal::currentUser();
+
+$user = \Drupal::currentUser();
+$user = User::load(\Drupal::currentUser()->id());
+
+$current_user = \Drupal::currentUser();
+
+
+\Drupal::currentUser()->id()
+
+
+$user = User::load(\Drupal::currentUser()->id());
+
+$email = $user->get('mail')->value;
+$name = $user->get('name')->value;
+$uid= $user->get('uid')->value;
+?>
+
+if (\Drupal::currentUser()->isAuthenticated()) {
+  // This user is logged in.
+} else {
+  // This user is not logged in.
+  }
+
+  https://drupalize.me/tutorial/overview-menu-links-module?p=2766
+
+  https://drupalize.me/tutorial/overview-menu-links-module?p=2766
+
+  https://befused.com/drupal/drupal8-admin-form-guide/
+
+  https://www.valuebound.com/resources/blog/building-configuration-form-in-drupal-8
+
+  https://www.codimth.com/blog/web/drupal/create-configuration-form-drupal-8
+
+  https://www.drupal.org/docs/drupal-apis/configuration-api/simple-configuration-api
+
+  https://gist.github.com/ozin7/c34ba6cfed2e26470ac6e29d416545e6
+------------------------------------------------------------------------------------------------------------
+controller, Form , Block -> dependecy injection-
+use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
+create() factory method to pass the dependencies into the class constructor. 
+Controllers, forms, and blocks are not defined via the *.services.yml file
+------------------------------------------------------------------------------------------------------------
+https://x-team.com/blog/creating-and-subscribing-to-events/
+https://www.chapterthree.com/blog/how-to-register-event-subscriber-drupal8
+https://www.codeenigma.com/blog/events-system-in-drupal-9
+https://www.valuebound.com/resources/blog/how-to-define-an-event-dispatcher-and-subscriber-drupal-8
+
+
+https://gist.github.com/JeffTomlinson/b733eb9224dba07a459cd09f3df56b93
+https://drupal-up.com/blog/drupal-8-service-dependency-injection-our-custom-module
+https://www.specbee.com/blogs/programmatically-creating-block-in-drupal-9
+https://designkojo.com/creating-customs-blocks-and-custom-block-types-drupal-9
+------------------------------------------------------------------------------------------------------------
+create block in drupal 8
+https://www.codimth.com/blog/web/drupal/how-create-custom-block-drupal-8-programmatically
+https://www.alansaunders.co.uk/blog/building-drupal-89-custom-block
+
+------------------------------------------------------------------------------------------------------------
+
+https://www.specbee.com/blogs/exposing-your-api-in-drupal-9
+https://www.codeenigma.com/blog/events-system-in-drupal-9
+https://befused.com/drupal/twig-block/
+------------------------------------------------------------------------------------------------------------
+https://www.specbee.com/blogs/how-to-create-a-custom-layout-builder-in-Drupal-8
+https://www.drupal.org/docs/drupal-apis/layout-api/how-to-register-layouts
+
+https://www.drupal.org/docs/8/core/modules/layout-builder/additional-modules
+https://medium.com/@OPTASY.com/drupal-layout-builder-vs-paragraphs-which-drupal-page-builder-should-you-use-d74d6af880a3
+
+insert paragraph / views inside layout builder-
+https://medium.com/@OPTASY.com/drupal-layout-builder-vs-paragraphs-which-drupal-page-builder-should-you-use-d74d6af880a3
+
+https://www.specbee.com/blogs/layout-builder-in-drupal-9-complete-guide
+
+https://www.thesavvyfew.com/insights/accessing-current-node-id-drupal
+------------------------------------------------------------------------------------------------------------
+databse queries
+https://drupalbook.org/drupal/913-working-database-drupal
+https://drupaloutsourcing.com/blog/work-database-drupal-8
+http://www.yuseferi.com/en/blog/Drupal-entity-API-cheat-sheet
+https://www.zyxware.com/article/how-to-get-all-nodes-of-a-given-type-in-drupal
+
+Get config values-
+
+https://drupal.stackexchange.com/questions/203791/how-can-i-retrieve-the-value-of-a-configuration-object-from-a-template
+https://www.codimth.com/blog/web/drupal/getting-and-setting-configuration-data-drupal-8
+
+config_sync_directory -> store config files
+
+https://www.drupal.org/docs/configuration-management/changing-the-storage-location-of-the-sync-directory
+
+On production sites, and if your account has permission to do so, it's a good idea to move the configuration sync directory outside of the webroot entirely. As your sync directory should be under version control, this means having your version control repository's root be one level higher than your webroot.
+------------------------------------------------------------------------------------------------------------
+https://thinktandem.io/blog/2017/12/09/lando-blt-acquia/
+https://docs.lando.dev/drupal/getting-started.html
+https://www.drupal.org/docs/develop/local-server-setup/linux-development-environments/set-up-a-local-development-drupal-0-4
+------------------------------------------------------------------------------------------------------------
+
+https://github.com/hook42/examples
+https://github.com/x-team/Drupal-8-Examples
+https://www.codeenigma.com/blog/events-system-in-drupal-9#
+https://www.singlemindconsulting.com/blog/create-a-page-template-for-anything-you-want-in-drupal/
+https://befused.com/drupal/page-template-content-type/
+
+https://www.interviewbit.com/php-interview-questions/#difference-between-variables-and-constants
+\Drupal::formBuilder()
+$form = \Drupal::service('entity.form_builder')->getForm($entity);
+
+https://www.codimth.com/blog/web/drupal/passing-data-php-javascript-drupal-8
+
+------------------------------------------------------------------------------------------------------------
+
+https://www.metaltoad.com/blog/drupal-8-entity-api-cheat-sheet
+https://stefvanlooveren.me/blog/how-access-field-value-entity-or-node-object-drupal-8
+------------------------------------------------------------------------------------------------------------
+https://www.tutorialspoint.com/what-is-dependency-injection-in-php
+Dependency injection is a procedure where one object supplies the dependencies of another object. Dependency Injection is a software design approach that allows avoiding hard-coding dependencies and makes it possible to change the dependencies both at runtime and compile time.
+
+https://www.tutorialspoint.com/what-is-dependency-injection-in-php
+
+
+exclude specific js/ css file from aggregation -> preprocess false
+external true
+minified true
+
+https://www.drupal.org/node/2360331
+https://prakashdrupal.wordpress.com/2019/05/25/drupal-8-interview-questions-for-experienced-drupal-developer/
+
+------------------------------------------------------------------------------------------------------------
+
+context in Drupal.behaviour
+https://www.drupal.org/forum/support/module-development-and-code-questions/2013-02-19/what-is-context-for-in-drupal
+
+instead of parsing entire DOM we can use context and search our element in the context
+
+The context is the part of the DOM that has just been loaded. On initial page load, it will be the entire document. On subsequent AJAX loads, it will be the part of the DOM that was just loaded.
+
+------------------------------------------------------------------------------------------------------------
+
+http://smacss.com/
+https://www.drupal.org/docs/develop/standards/css/css-architecture-for-drupal-9
+
+Drupal 8/9 uses the SMACSS system to conceptually categorize CSS rules
+
+1) Base-> 
+Base rules consist of styling for HTML elements only, such as used in a CSS reset or Normalize.css. Base rules should never include class selectors.
+
+2) Layout->
+Arrangement of elements on the page, including grid systems.
+
+3) Component->
+Reusable, discrete UI elements; components should form the bulk of Drupal’s CSS.
+
+4) State->
+Styles that deal with transient changes to a component’s appearance. Often, these are client-side changes that occur as the user interacts with the page, such as hovering links or opening a modal dialog. 
+
+5) Theme->
+Purely visual styling, such as border, box-shadow, colors and backgrounds, font properties, etc. 
+------------------------------------------------------------------------------------------------------------
+
+BEM-> block element and modifier
+https://www.specbee.com/blogs/bem-block-element-modifier-with-drupal-emulsify-twig
+https://slidedeck.io/bradwade/bem-in-drupal-presentation
+https://thejibe.com/articles/applying-bem-inspired-classes-to-your-drupal-8-theme
+
+BEM includes three parts:
+
+Block -Blocks are the outermost and functionally independent component and are reusable. Examples: header, footer, sidebar, menu, content, etc.
+
+Element-
+
+Elements are child items of a Block. Each element can have only one block and cannot be used outside of it. Examples: menu items, list items, input field, etc.
+
+Modifier
+
+A class name through which you can define the appearance, state, or behavior of a block or element. Examples: red, large, disabled, fixed, etc.
+
+
+block-name__element-name_large
+
+------------------------------------------------------------------------------------------------------------
+
+Custom text filter in drupal-
+https://www.lullabot.com/articles/creating-a-custom-filter-in-drupal-8
+https://github.com/jazzdrive3/celebrate-filter-example
+
+------------------------------------------------------------------------------------------------------------
+State api drupal
+https://wengerk.medium.com/drupal-8-differences-between-configuration-api-state-api-d4b6f3bc5ea7
+https://www.drupal.org/docs/8/api/state-api/overview
+https://api.drupal.org/api/drupal/core!lib!Drupal!Core!State!State.php/class/State
+https://web4pro.net/blog-news/state-api-and-configuration-api/
+https://davidjguru.github.io/blog/drupal-tips-the-magic-of-attached
+
+------------------------------------------------------------------------------------------------------------
+render service
+https://stefvanlooveren.me/blog/how-render-table-drupal-8-html-cells
+
+https://drupalsun.com/philipnorton42/2022/03/20/drupal-9-programmatically-creating-and-using-urls-and-links
+https://cipix.nl/understanding-drupal-8-part-3-routing
+https://www.drupal8.ovh/index.php/en/tutorials-drupal?page=1
+https://gist.github.com/DanLaufer/ae109c950cce1fc58f8208ef88e93f79
+https://gist.github.com/DanLaufer
+https://www.flocondetoile.fr/blog/provide-custom-mode-form-entities-drupal-8
+https://drupalbook.org/drupal/96-route-parameter
+https://mycode.blog/lakshmi/drupal-89-how-use-parameters-routes
+https://drupalbook.org/drupal/96-route-parameter
+https://github.com/levmyshkin/drupalbook8
+https://drupal.stackexchange.com/questions/255196/define-node-array-id-as-parameter-in-routing
+------------------------------------------------------------------------------------------------------------
+
+
+Render element
+https://drupal.stackexchange.com/questions/255196/define-node-array-id-as-parameter-in-routing
+
+Parameter upcasting
+
+https://www.drupal.org/docs/8/api/translation-api/overview
+
+
+https://www.amazeelabs.com/en/journal/multilingual-drupal-part-1-process
+https://drupal.stackexchange.com/questions/298967/what-is-the-difference-between-drupal-formatplural-and-drupal-t
+https://www.drupal.org/node/2173787
+http://www.drupal8.ovh/en/tutoriels/423/translation-api-php-twig-javascript
+https://getlevelten.com/blog/mark-carver/drupal-8-twig-templates-and-translations
+
+------------------------------------------------------------------------------------------------------------
+
+https://gist.github.com/bdlangton/e826276a0c78d9a89d8dec23dd0c7683
+https://drupal.stackexchange.com/questions/248878/drupal-8-how-to-retrieve-field-values-when-i-use-loadmultiple-to-load-multiple
+https://www.sitepoint.com/drupal-8-version-entityfieldquery/
+
+
+------------------------------------------------------------------------------------------------------------
+
+Json api-
+https://www.digitalnadeem.com/drupal/how-to-configure-json-api-module-and-create-web-services-using-json-api-specifications-in-drupal/
+http://www.drupal8.ovh/en/tutoriels/155/drupal-8-tags-based-cache-system

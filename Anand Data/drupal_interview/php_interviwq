@@ -1,0 +1,43 @@
+strtolower()
+strtoupper()
+ucfirst()
+lcfirst()
+ucwords()
+strrev()
+strlen()
+-------------------------------
+
+array()
+array_change_key_case()
+array_chunk()
+count()
+sort()
+array_reverse()
+array_search()
+array_intersect()
+
+
+https://www.javatpoint.com/php-interview-questions
+https://intellipaat.com/blog/interview-question/php-interview-questions/#10
+https://www.w3schools.com/php/php_ref_string.asp
+https://www.knowledgehut.com/interview-questions/php
+https://www.ambitionbox.com/profiles/php-developer/interview-questions
+https://www.devteam.space/hiring-interview-tips/php-interview-questions-and-answers/
+https://www.guru99.com/php-mvc-frameworks.html#:~:text=PHP%20MVC%20is%20an%20application,a%20car%20and%20the%20driver.
+https://www.devteam.space/hiring-interview-tips/php-interview-questions-and-answers/
+https://www.interviewbit.com/jquery-interview-questions/
+https://github.com/pavanBS/drupal-module-crud
+---------------------------------
+PHP MVC is an application design pattern that separates the application data and business logic (model) from the presentation (view). MVC stands for Model, View & Controller.
+
+The controller mediates between the models and views.
+
+Think of the MVC design pattern as a car and the driver.
+
+The car has the windscreens (view) which the driver (controller) uses to monitor traffic ahead then speed or brake (model)
+
+
+--------------------------------------------------------------
+Jquery 
+https://www.interviewbit.com/jquery-interview-questions/#jquery-functions-to-provide-effects
+https://www.interviewbit.com/jquery-interview-questions/#jquery-advantages

@@ -1,0 +1,20 @@
+services:
+  welcome_module.custom_services:
+    class: Drupal\welcome_module\CustomService
+    arguments: ['@current_user']
+
+  welcome_module.event_subscriber_example:
+    class: Drupal\welcome_module\EventSubscriber\ExampleEventSubScriber
+    tags:
+      - { name: 'event_subscriber' }  
+
+  welcome_module.twig_extension:
+    arguments: ['@renderer']
+    class: Drupal\welcome_module\TwigExtension\RemoveNumbers
+    tags:
+      - { name: twig.extension }
+
+  welcome_module.access_checker:
+    class: Drupal\welcome_module\Access\CustomAccessCheck
+    tags:
+      - { name: access_check, applies_to: _welcome_access_check }

@@ -1,0 +1,12 @@
+https://www.drupal.org/docs/security-in-drupal/writing-secure-code-for-drupal
+
+Use 
+t() and 
+\Drupal::translation()->formatPlural() 
+with @ or % placeholders to construct safe, translatable strings. See Code text translation API in Drupal 8 for more details.
+
+
+Use Html::escape() for plain text.
+Use Xss::filter() for text that should allow some HTML tags.
+Use Xss::filterAdmin() for text entered by admin users that should allow most HTML.
+Use UrlHelper::stripDangerousProtocols() or UrlHelper::filterBadProtocol() for checking URLs - the former can be used in conjunction with SafeMarkup::format().

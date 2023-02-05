@@ -1,0 +1,61 @@
+
+
+
+{% import _self as custom %}
+{% import '@welcome_module/macros.twig' as myMacros %}
+
+
+This is from controller {{ first_name|upper }}  {{ last_name|lower }}
+
+{{ myMacros.custom_links('Google','https://www.google.com') }}
+{{ custom.custom_links('Google','https://www.google.com') }}
+{% macro custom_links(title, link) %}
+        <a  href="{{ link }} ">{{ title }}</a>
+{% endmacro %}
+
+{% set customclass= 'anand phadnis' %}
+
+{{ date|format_date('custom', 'M j, Y') }}
+
+{{ first_name ~ ' ' ~ last_name }}
+
+{% set my_attribute = create_attribute() %}
+{%
+  set my_classes = [
+    'kittens',
+    'llamas',
+    'puppies',
+    customclass|clean_class
+  ]
+%}
+<br />
+{{ my_classes|safe_join(', ') }}
+<br/ >
+{% set custom_number = 'anand100anand' %}
+
+<br/ ><br/ >
+
+<div{{ my_attribute.addClass(my_classes).setAttribute('id', 'myUniqueId') }}>
+  content
+</div>
+
+{{ link('Google', 'https://www.google.com', { 'class':['foo', 'bar', 'baz'], 'id' : 'myUniqueId'} ) }}
+
+
+<a href="{{ url('welcome_module.settings_form') }}">{{ 'View all content'|t }}</a>
+
+<a href="{{ path('entity.node.canonical', {'node': 1}) }}">{{ 'View node page'|t }}</a>
+
+{# Link to user entity/profile page. #}
+<a href="{{ path('entity.user.canonical', {'user': 1}) }}">{{ 'View user profile'|t }}</a>
+
+
+
+
+{% set items = [ 'apple' , 'orange', 'banana' ] %}
+{% for item in items %}
+<div class=”my-cool-class”>{{ item }}</div>
+{% endfor %}
+
+
+{{ drupal_view('the_wedding', 'block_1') }}

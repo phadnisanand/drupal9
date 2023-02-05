@@ -1,0 +1,25 @@
+<?php
+
+function welcome_module_page_attachments(array &$attachments) {
+
+  $attachments['#attached']['library'][] = 'core/drupalSettings';
+  
+  $attachments['#attached']['library'][] = 'welcome_module/global-add';
+
+  $attachments['#attached']['drupalSettings']['test'] = 10;
+  
+}
+
+
+function welcome_module_theme($existing, $type, $theme, $path) {
+
+
+    return array(
+        'mymodule_template' => array(
+            'variables' => array('test_var' => NULL, 'custom_name' => NULL),
+        ),
+         'mymodule_controller_template' => array(
+            'variables' => array('myvariable' => array()),
+        ),
+    );
+}

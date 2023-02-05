@@ -1,0 +1,28 @@
+crud_demo.create_form:
+  path: '/crud/articles'
+  defaults:
+    _controller: '\Drupal\crud_demo\Controller\ListArticlesController::createFormData'
+  requirements:
+    _permission: 'access content'
+
+crud_demo.get_form:
+  path: '/crud/form'
+  defaults:
+    _form: '\Drupal\crud_demo\Form\createForm'
+    _title: 'Create data Form'
+  requirements:
+    _permission: 'access content'
+
+crud_demo.list_data:
+  path: '/crud/list_articles'
+  defaults:
+    _controller: '\Drupal\crud_demo\Controller\ListArticlesController::listArticles'
+  requirements:
+    _permission: 'access content'
+
+crud_demo.submit_data:
+  path: '/crud/submit_data'
+  defaults:
+    _controller: '\Drupal\crud_demo\Controller\ListArticlesController::submitData'
+  requirements:
+    _permission: 'access content'

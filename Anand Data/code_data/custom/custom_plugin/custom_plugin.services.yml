@@ -1,0 +1,4 @@
+services:
+  plugin.manager.example_plugin:
+    class: Drupal\custom_plugin\Plugin\ExamplePluginManager
+    parent: default_plugin_manager

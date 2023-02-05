@@ -1,0 +1,6 @@
+welcome_module.settings_form:
+  title: 'SettingsForm'
+  route_name: welcome_module.settings_form
+  description: 'A description for the menu'
+  parent: system.admin_config_system
+  weight: 99

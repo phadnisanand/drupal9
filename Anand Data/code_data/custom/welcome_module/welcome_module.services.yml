@@ -1,0 +1,19 @@
+services:
+  welcome_module.custom_services:
+    class: Drupal\welcome_module\CustomService
+    arguments: ['@current_user','@http_client_factory','@language_manager','@current_route_match','@path.current','@path.validator','@entity_type.manager']
+
+  welcome_module.event_subscriber_example:
+    class: Drupal\welcome_module\EventSubscriber\ExampleEventSubScriber
+    tags:
+      - { name: 'event_subscriber' }
+
+  welcome_module.access_checker:
+    class: Drupal\welcome_module\Access\CustomAccessCheck
+    tags:
+      - { name: access_check, applies_to: _welcome_access_check }
+      
+  welcome_module.param_converter:
+    class: \Drupal\welcome_module\ParamConverter\DrupalHacksParamConverter
+    tags:
+      - { name: paramconverter }

@@ -1,0 +1,31 @@
+
+global $language and global $user 
+
+Drupal::currentUser()  -> get current user
+Drupal::languageManager()->getCurrentLanguage()  -> get current language
+$user = \Drupal::currentUser();
+
+$user = \Drupal::currentUser();
+
+
+$user = \Drupal::currentUser();
+$user = User::load(\Drupal::currentUser()->id());
+
+$current_user = \Drupal::currentUser();
+
+
+\Drupal::currentUser()->id()
+
+
+$user = User::load(\Drupal::currentUser()->id());
+
+$email = $user->get('mail')->value;
+$name = $user->get('name')->value;
+$uid= $user->get('uid')->value;
+?>
+
+if (\Drupal::currentUser()->isAuthenticated()) {
+  // This user is logged in.
+} else {
+  // This user is not logged in.
+  }

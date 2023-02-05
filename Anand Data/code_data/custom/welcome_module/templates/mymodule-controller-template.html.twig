@@ -1,0 +1,11 @@
+
+<ul>
+{% for key, value in myvariable %}
+
+<li>
+	{% for keyin, valuein in value %}
+	{{ valuein }} 
+ 	{% endfor %}
+</li>
+{% endfor %}
+</ul>

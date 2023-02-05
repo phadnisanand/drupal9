@@ -1,0 +1,23 @@
+crud_demo.mydata_controller_display:
+  path: '/display'
+  defaults:
+    _controller: '\Drupal\crud_demo\Controller\CrudDemoController::display'
+    _title: 'display'
+  requirements:
+    _permission: 'access content'
+
+crud_demo.edit_form:
+  path: '/crud_demo/form/edit/{cid}'
+  defaults:
+    _form: '\Drupal\crud_demo\Form\EditForm'
+    _title: 'MydataForm'
+  requirements:
+    _access: 'TRUE'
+
+crud_demo.delete_form:
+  path: '/crud_demo/form/delete/{cid}'
+  defaults:
+    _form: '\Drupal\crud_demo\Form\DeleteForm'
+    _title: 'DeleteForm'
+  requirements:
+    _access: 'TRUE'

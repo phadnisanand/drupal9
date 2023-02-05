@@ -1,0 +1,4 @@
+services:
+  anand_module.custom_services:
+    class: Drupal\anand_module\AlterService
+    arguments: ['@current_user']

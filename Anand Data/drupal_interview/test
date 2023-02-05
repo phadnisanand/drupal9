@@ -1,0 +1,13 @@
+$userCurrent = \Drupal::currentUser();
+$user = \Drupal\user\Entity\User::load($userCurrent->id());
+$name = $user->getUsername();
+
+
+vrxlpx43046
+bayerwsf0db1210552
+
+ 
+scp bayerwsf.01live@web-4120.enterprise-g1.hosting.acquia.com:/mnt/files/bayerwsf.01live/backups/sitestudio_backups/01live-vrxlpx43046-bayerwsf0db1210552-2022-11-23.sql.gz .
+
+
+bayerwsf0db1173569
