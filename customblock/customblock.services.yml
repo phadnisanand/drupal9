@@ -1,0 +1,4 @@
+services:
+  customblock.custom_services:
+    class: Drupal\customblock\CustomService
+    arguments: ['@http_client']

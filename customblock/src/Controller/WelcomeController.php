@@ -9,7 +9,11 @@ use Drupal\Core\Entity\Query\QueryInterface;
 use Drupal\node\Entity\Node;
 use Drupal\Core\Database\Connection;
 use Drupal\Core\Config\ConfigFactory;
-
+use Drupal\customblock\CustomService;
+use Drupal\Component\Utility\Tags;
+use Symfony\Component\HttpFoundation\Request;
+use Drupal\Component\Utility\Unicode;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 
 class WelcomeController extends ControllerBase implements ContainerInjectionInterface {
@@ -26,12 +30,8 @@ class WelcomeController extends ControllerBase implements ContainerInjectionInte
 
   protected $configFactory;
 
-  public function __construct(EntityTypeManager
-    $entity_type_manager,Connection $connection,ConfigFactory $configFactory) {
-    $this->entityTypeManager = $entity_type_manager;
-    $this->db= $connection;
-    $this->configFactory = $configFactory;
-
+  public function __construct( CustomService $custom_service) {
+    $this->custom_service = $custom_service;
   }
 
   /**
@@ -39,14 +39,39 @@ class WelcomeController extends ControllerBase implements ContainerInjectionInte
    */
   public static function create(ContainerInterface $container) {
     return new static(
-      $container->get('entity_type.manager'),
-      $container->get('database'),
-      $container->get('config.factory'),
+      $container->get('customblock.custom_services')
     );
   }
 
   public function displayData() {
-      print_r($_REQUEST); exit;
+    //$formdata =\Drupal::request()->query->all();
+   // $title=  $formdata['title'];
+    //$title= \Drupal::state()->get('search_keyword');
+    //echo  $title; exit;
+    $weather_data = [];
+    /*if(!empty($title)) {
+       $weather_data= $this->custom_service->getData($title);
+    }*/
+      return array(
+            '#theme' => 'weather_controller_template',
+            '#data' => $weather_data,
+            '#cache' => ['max-age' => 0],
+        );
 
+  }
+
+  /**
+   * Handler for autocomplete request.
+   */
+  public function handleAutocomplete(Request $request, $city) {
+    $results = [];
+
+    // Get the typed string from the URL, if it exists.
+    if ($input = $request->query->get('q')) {
+      $typed_string = Tags::explode($input);
+      $typed_string = strtolower(array_pop($typed_string));
+      $results = $this->custom_service->getFilterData($typed_string);
+    }
+    return new JsonResponse($results);
   }
 }

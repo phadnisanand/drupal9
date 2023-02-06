@@ -29,4 +29,9 @@ class CustomBlock extends BlockBase {
 
     return $form;
    }
+
+
+  public function getCacheMaxAge() {
+    return 0;
+  }
 }

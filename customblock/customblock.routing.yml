@@ -5,4 +5,11 @@ customblock.list:
     _title: 'Welcome to My Module in Drupal 9'
   requirements:
     _permission: 'access content'
-    
+
+customblock.autocomplete:
+  path: '/welcome/{city}'
+  defaults:
+    _controller: '\Drupal\customblock\Controller\WelcomeController::handleAutocomplete'
+    _format: json
+  requirements:
+    _access: 'TRUE'
