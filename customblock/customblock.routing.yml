@@ -1,0 +1,8 @@
+customblock.list:
+  path: '/welcome/displaydata'
+  defaults:
+    _controller: '\Drupal\customblock\Controller\WelcomeController::displayData'
+    _title: 'Welcome to My Module in Drupal 9'
+  requirements:
+    _permission: 'access content'
+    
