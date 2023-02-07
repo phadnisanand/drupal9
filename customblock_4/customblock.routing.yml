@@ -1,0 +1,23 @@
+customblock.list:
+  path: '/welcome/displaydata'
+  defaults:
+    _controller: '\Drupal\customblock\Controller\WelcomeController::displayData'
+    _title: 'Welcome to My Module in Drupal 9'
+  requirements:
+    _permission: 'access content'
+
+customblock.autocomplete:
+  path: '/welcome/{city}'
+  defaults:
+    _controller: '\Drupal\customblock\Controller\WelcomeController::handleAutocomplete'
+    _format: json
+  requirements:
+    _access: 'TRUE'
+
+customblock.ajaxresponse:
+  path: '/ajaxresponse/{title}'
+  defaults:
+    _controller: '\Drupal\customblock\Controller\WelcomeController::ajaxResponse'
+    _format: json
+  requirements:
+    _access: 'TRUE'
