@@ -1,0 +1,20 @@
+https://freeonlinetools24.com/json-decode
+https://www.urbaninsight.com/article/debugging-drupal
+
+log_to_file(json_encode($variables));
+//ini_set('memory_limit', '510002M');
+exit;
+$fp= fopen(DRUPAL_ROOT. '/file.txt','w');
+fwrite($fp, print_r($variables, TRUE));
+fwrite($fp, print_r('__end__\n', TRUE));
+fclose($fp);
+exit;
+
+
+function log_to_file($text) {
+  $f = fopen('my_log.txt', 'a');
+  fwrite($f, date('Ymd H:i:s - ') . $text . "\n");
+  fclose($f);
+}
+
+tail -f my_log.txt -> check file content

@@ -1,0 +1,83 @@
+trans
+t()
+{% trans %}Submitted on {{ date|placeholder }}{% endtrans %}
+{{ var1|t }}
+{{ var1|placeholder }}
+{% trans %}{{ var1 }}{% endtrans %}
+clean_class
+clean_id
+format_date
+render
+safe_join()
+without
+
+custom pipe in twig -> Twig_Extension class
+
+
+
+{{ content|without('links', 'field_some_data') }}
+
+{{ form|without('advanced', 'actions') }}
+
+\Drupal::currentUser();
+
+check if user is current page-
+$is_front_page = \Drupal::service('path.matcher')->isFrontPage();
+
+\Drupal::routeMatch()->getParameter('node');  
+
+
+$userCurrent = \Drupal::currentUser();
+$user = \Drupal\user\Entity\User::load($userCurrent->id());
+$name = $user->getUsername();
+
+\Drupal::service('path.matcher')->isFrontPage()
+
+$config_factory = \Drupal::configFactory();
+$langcode = $config_factory->get('system.site')->get('langcode');
+
+$service = \Drupal::service('content_api.test');   
+echo $service->getData();
+
+$config_factory = \Drupal::configFactory();
+$config = $config_factory->getEditable('example.configuration');
+$config->set('fruit', ['apple', 'banana', 'mango']);
+$config->save(TRUE);
+
+
+global $language -> Drupal::languageManager()->getCurrentLanguage() 
+global $user  -> Drupal::currentUser()
+
+
+Ajax-
+
+  '#ajax' => [
+        'callback' => '::myAjaxCallback', 'event' => 'change', 'wrapper' => 'my-ajax-wrapper', 'progress' => [
+          'type' => 'throbber', 'message' => $this->t('Verifying entry...'),
+        ],
+      ]
+
+
+ https://www.faichi.com/blog/what-are-drupal-behaviors
+
+ https://www.benmarshall.me/drupal-behaviors/
+
+custom.js-
+
+
+Drupal.behaviors.behaviorName = {
+  attach: function(context, settings) {
+    $(context).find('a.cool-link').on('click', function() {
+      // Do something cool when the link is clicked.
+    });
+  }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+t() and formatPlural() on your class. -> Drupal
+Drupal.t() and Drupal.formatPlural() -> Javascript
+Simple text translation is possible with the 't' (or 'trans') filter, while a whole {% trans %} block is supported (as defined by the Twig i18n extension) for more complex scenarios
+https://drupal.stackexchange.com/questions/298967/what-is-the-difference-between-drupal-formatplural-and-drupal-t
+https://chromatichq.com/insights/drupal-code-standards-t-function/
+https://simpledrupal.com/article/how-pluralize-sentences-drupal-8
+https://drupal.stackexchange.com/questions/298967/what-is-the-difference-between-drupal-formatplural-and-drupal-t

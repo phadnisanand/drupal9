@@ -1,0 +1,21 @@
+Overriding Services in Drupal 8 with ServiceProvideBase
+
+https://www.codimth.com/blog/web/drupal/overriding-services-drupal-8-serviceprovidebase
+http://niraj-meegama.info/override-drupal-8-core-services
+
+Access check in drupal-
+https://www.codimth.com/blog/web/drupal/how-create-custom-access-checking-routes-drupal-8
+https://www.axelerant.com/blog/custom-access-check-routes-drupal-8
+https://www.drupal.org/docs/8/api/routing-system/access-checking-on-routes/custom-route-access-checking
+https://www.drupal.org/docs/8/api/routing-system/access-checking-on-routes/advanced-route-access-checking
+
+use Drupal\Core\Routing\Access\AccessInterface;
+AccessInterface interface -> access()
+
+
+_custom_access
+
+permissions/roles
+
+use Drupal\Core\Access\AccessResult;
+AccessResult::allowedIf

@@ -1,0 +1,20 @@
+1) PHP upgrade 
+2) Drupal upgrage
+3) any module
+
+https://www.geeksforgeeks.org/how-to-prevent-xss-with-html-php/
+
+Using htmlspecialchars() function 
+htmlentities()
+strip_tags() 
+addslashes() 
+
+
+---------------------------------------------------------------
+
+10) What are PHP Magic Methods/Functions. List them.
+In PHP all functions starting with __ names are magical functions/methods. Magical methods always lives in a PHP class.The definition of magical function are defined by programmer itself.
+
+Here are list of magic functions available in PHP
+
+__construct(), __destruct(), __call(), __callStatic(), __get(), __set(), __isset(), __unset(), __sleep(), __wakeup(), __toString(), __invoke(), __set_state(), __clone() and __debugInfo()

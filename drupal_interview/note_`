@@ -1,0 +1,44 @@
+$current_user = \Drupal::currentUser(); //returns an AccountProxyInterface object and not a UserInterface object
+$current_user_uid = $current_user->id(); // numberic uid value
+$current_user_roles = $current_user->getRoles(); // array List of role IDs
+
+// Check user has specific role; example 'administrator' role
+if (in_array('administrator', $current_user_roles)) {
+    // do something if user has this role
+}
+
+{% if logged_in %}
+ !!!! do you stuff !!!
+{% else %}
+ !!!! do you stuff !!!
+{% endif %}
+
+{{ link(item.title, item.uri, { 'class':['foo', 'bar', 'baz']} ) }}
+
+composer require drupal/twig_tweak
+
+
+
+  arguments: ['@messenger', '@date.formatter', '@database']
+  arguments: ['@config.factory', '@current_route_match', '@entity_type.manager']
+
+$entityTypeManager = \Drupal::entityTypeManager();
+
+$node = \Drupal::service(‘entity_type.manager’)->getStorage(‘node’)->load(123);
+
+$node->title = “Lorem ipsum dolor sit amet”;
+
+$node->save();
+
+----------------------------------------------------
+
+\Drupal::entityManager() 
+
+\Drupal::messenger()->addMessage('Say something else');
+
+----------------------------------------------------
+$database = \Drupal::database();
+// Or
+$database = \Drupal::service('database');
+----------------------------------------------------
+

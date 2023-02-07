@@ -1,0 +1,13 @@
+create own content and config entity
+custom plugin type
+Creating our own custom entity type
+Creating our own custom plugin type
+Writing a custom Drush command
+
+https://spinningcode.org/2017/01/drupal-8-plugins-are-addictive/
+https://gist.github.com/acrosman
+https://drupalize.me/blog/201409/unravelling-drupal-8-plugin-system
+https://www.drupal.org/docs/drupal-apis/plugin-api/creating-your-own-plugin-manager
+https://www.sitepoint.com/drupal-8-custom-plugin-types/
+
+https://www.sitepoint.com/drupal-8-version-entityfieldquery/

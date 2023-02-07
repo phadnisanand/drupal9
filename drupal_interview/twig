@@ -1,0 +1,118 @@
+https://www.mediacurrent.com/blog/simplify-menu-and-twig-macros
+https://growingcookies.com/twig-macros/
+https://forsmile.jp/en/twig-en/1580/
+https://www.branchcms.com/learn/docs/developer/twig/debugging
+https://drupalize.me/blog/201405/lets-debug-twig-drupal-8
+https://www.digitalnadeem.com/drupal/drupal-twig-tutorial/
+https://www.unleashed-technologies.com/blog/twig-tricks-you-need-know
+https://gist.github.com/raphaellarrinaga/c1d71f69873c967ff74f8ec09cbdf9e1
+https://www.specbee.com/blogs/twig-tweak-in-drupal-9-functions-and-filters
+https://befused.com/drupal/twig-addclass/
+
+1) path() -> relative url
+2) url()  -> abolute url
+3) link()  -> anchor tag
+
+
+4) without filter
+5) clean_class
+6) clean_id
+7) safe_join()
+8) render
+
+
+https://www.chapterthree.com/blog/twig-concepts-drupal-8-themes-part-ii
+https://www.electriccitizen.com/citizen-blog/twig-drupal-8-development-twig-templating-part-1-2
+https://stackoverflow.com/questions/40526990/difference-between-include-extends-use-macro-embed-in-twig
+https://www.youtube.com/watch?v=XWhQku4QBD8
+
+
+https://www.drupal.org/docs/8/theming-drupal-8/including-part-template
+https://drupal.stackexchange.com/questions/141066/include-a-partial-template
+
+{% include '@mytheme/parts/footer.html.twig' %}
+
+pass additional arguments 
+{% include '@mytheme/includes/form-block.html.twig' with {display_title: true} %}
+
+extends 
+https://befused.com/drupal/extend-twig-templates/#
+{% extends "page.html.twig" %}
+
+https://www.branchcms.com/learn/docs/developer/twig/operators
+
+
+https://drupal.stackexchange.com/questions/228388/how-do-i-get-the-raw-field-value-in-a-twig-template
+
+ {{ content.field_location }}
+
+{{ content|without('field_location')}}
+
+
+https://sarahcodes.medium.com/getting-drupal-8-field-values-in-twig-22b80cb609bd
+
+ {{ content.field_location.0 }} -> it will print value of the field
+
+ {{ content.field_location }}  -> it will print the field
+
+
+ macro in twig
+ https://www.drupal.org/docs/theming-drupal/twig-in-drupal/macros-in-twig-templates
+------------------------------------------------------------------------------------------------
+From _self
+It's possible to place the macro within the same twig from which you call it. The _self context is used in this case...
+
+
+{% import _self as custom %}
+
+{{ custom.custom_links('Google','https://www.google.com')
+
+{% macro custom_links(title, link) %}
+        <a  href="{{ link }} ">{{ title }}</a>
+{% endmacro %}
+
+--------------------------------------------------------------------------------------------------
+from seperate file-
+{% import '@welcome_module/macros.twig' as myMacros %}
+
+{{ myMacros.custom_links('Google','https://www.google.com') }}
+
+
+macros.twig
+
+{% macro custom_links(title, link) %}
+        <a  href="{{ link }} ">{{ title }}</a>
+{% endmacro %}
+
+
+
+{{ _self.input(name, value, type, size) }}
+
+
+ https://drupal.stackexchange.com/questions/227133/exclude-fields-from-printing-in-twig
+--------------------------------------------------------------------------------------------------
+
+ Custom twig extension drupal
+ http://www.yuseferi.com/en/blog/How-write-custom-Twig-filter-Drupal-8
+
+https://www.hashbangcode.com/article/drupal-9-creating-custom-twig-functions-and-filters#:~:text=To%20create%20a%20custom%20Twig,the%20arguments%20to%20the%20constructor.
+https://medium.com/@thihathit/extending-custom-twig-extension-to-drupal-8-twig-extension-class-d4b99c2177ae
+https://www.digitalnadeem.com/drupal/how-to-create-custom-twig-template-and-render-data-in-custom-twig-file-in-drupal-8-and-9/
+
+https://www.digitalnadeem.com/drupal/how-to-create-custom-twig-template-and-render-data-in-custom-twig-file-in-drupal-8-and-9/
+
+custom twig extension-
+
+create service with tag name twig.extension
+Twig_Extension class need to extend our class
+https://api.drupal.org/api/drupal/core!core.services.yml/service/twig.extension/8.2.x
+https://drupalsun.com/leopathu/2022/03/11/create-custom-twig-filter-drupal-8
+--------------------------------------------------------------------------------------------------
+https://drupal.stackexchange.com/questions/182405/how-do-i-render-a-form
+render a form drupal 8
+
+$form = \Drupal::formBuilder()->getForm(\Drupal\user\Form\UserLoginForm);
+--------------------------------------------------------------------------------------------------
+
+https://jacine.gitbooks.io/theming/content/advanced/render.html
+

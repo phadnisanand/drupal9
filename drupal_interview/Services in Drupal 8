@@ -1,0 +1,66 @@
+create own Services in Drupal 8
+
+1) create a module .info.yml file
+2) services.yml file create to define service
+services:
+	my_custom_service::say_hello:
+	 class: Drupal\my_custom_service\HelloServices
+3) class: Drupal\custom_services_example\HelloServices
+
+arguments: ['@modulename.services1', '@modulename.services4', '@modulename.services7']  
+
+4) create class src/HelloServices.php
+
+namespace  Drupal\custom_services_example;
+
+class HelloServices {
+
+ protected $say_something;
+
+ public function __construct() {
+   $this->say_something = 'Hello World!';
+ }
+
+ public function  sayHello($name = ''){
+   if (empty($name)) {
+     return $this->say_something;
+   }
+   else {
+     return "Hello " . $name . "!";
+   }
+ }
+}
+
+
+5) You can call services in 2 ways-
+
+$database = \Drupal::database();
+// Or
+$database = \Drupal::service('database');
+
+https://www.valuebound.com/resources/blog/how-to-define-your-own-services-drupal-8
+
+
+
+if ($node = \Drupal::routeMatch()->getParameter('node')) {
+  $test = $node->field_test->value;
+  $variables['#attached']['library'][] = 'mycustomblock/custom'; 
+  $build['#attached']['drupalSettings']['mycustomblock']['test'] = $test;
+}
+
+
+
+Global static services list-
+https://api.drupal.org/api/drupal/core%21lib%21Drupal.php/class/Drupal/9.3.x
+https://drupal.stackexchange.com/questions/227326/how-do-i-use-the-global-class-drupal-static-methods-to-access-services
+
+hooks list-
+https://api.drupal.org/api/drupal/core%21core.api.php/group/hooks/9
+
+Core events-
+https://api.drupal.org/api/drupal/core!core.api.php/group/events
+
+https://dxpr.com/drupal-blog/6-amazing-websites-about-learning-drupal-you-should-visit
+
+
+

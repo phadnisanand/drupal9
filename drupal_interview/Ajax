@@ -1,0 +1,69 @@
+Ajax
+https://www.drupal.org/docs/drupal-apis/javascript-api/ajax-forms
+https://www.drupal.org/docs/drupal-apis/ajax-api/basic-concepts
+
+ajax form
+autocomplete
+dialog box
+ajax commands
+custom ajax command
+core/drupal.ajax library attach 
+
+https://www.patrickvanefferen.nl/blog/ajax-drupal
+https://github.com/pefferen/hello_ajax/
+https://stefvanlooveren.me/blog/make-sure-javascript-keeps-working-after-ajax-call-drupal-8-solved
+
+
+https://weknowinc.com/blog/creating-custom-ajax-command-drupal-8
+https://www.codimth.com/blog/web/drupal/creating-custom-ajax-command-drupal-8
+https://www.drupal.org/forum/support/module-development-and-code-questions/2018-12-18/creating-custom-ajax-command-in
+
+
+----------------------------------------------------
+
+https://drupalize.me/tutorial/render-api-overview?p=2512
+render 
+https://www.drupal.org/node/2912696
+https://events.drupal.org/neworleans2016/sessions/aha-understanding-and-using-render-arrays-drupal-8
+https://www.drupal.org/docs/8/api/render-api/the-drupal-8-render-pipeline
+https://api.drupal.org/api/drupal/elements
+https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21theme.api.php/group/theme_render/10
+https://opensenselabs.com/blog/tech/how-use-ajax-api-drupal-8
+https://mycode.blog/lakshmi/implement-ajax-callback-function-drupal-89
+https://www.drupal.org/docs/drupal-apis/javascript-api/ajax-forms
+
+
+
+https://gorannikolovski.com/blog/how-to-create-custom-autocomplete-field-and-populate-multiple-fields-with-ajax
+https://www.droptica.com/blog/drupal-8-restjson-integration-javascript-application/
+https://drupalbook.org/drupal/68-working-javascriptjquery-drupal-8-what-are-behaviors
+
+https://www.digitalnadeem.com/drupal/drupal-8-load-view-data-using-ajax-call/
+https://www.webomelette.com/ajax-events-entity-reference-autocomplete-form-elements-drupal-8
+
+
+----------------------------------------------------
+https://drupal.stackexchange.com/questions/231188/how-to-load-content-in-a-div-with-ajax
+https://stackoverflow.com/questions/41532279/drupal-8-module-how-to-use-ajax
+https://mycode.blog/lakshmi/implement-ajax-callback-function-drupal-89
+https://stefvanlooveren.me/blog/make-sure-javascript-keeps-working-after-ajax-call-drupal-8-solved
+https://www.thirdandgrove.com/insights/rendering-view-ajax-drupal-8/
+https://drupal.stackexchange.com/questions/231188/how-to-load-content-in-a-div-with-ajax
+Ajax demo
+1) return response of any type table , markup and replace in html 
+2) $.ajax() use 
+Drupal.ajax({ url: endpoint }).execute();
+https://drupaljs.net/8.7.x/Drupal.Ajax.html#beforeSend
+https://drupaljs.net/8.7.x/Drupal.Ajax.html#~elementSettings
+https://www.hashbangcode.com/article/drupal-8-running-batch-through-ajax-request
+https://drupal.stackexchange.com/questions/312455/drupal-ajax-prototype-beforesubmit-results-in-ajax-error
+https://gist.github.com/sumanthkumarc/a61088cccf86722065dfa4b68711f386
+https://drupal.stackexchange.com/questions/49462/drupal-ajaxified-links-hook-into-requests-before-they-are-sent
+http://www.dave.st/content/drupalajaxprototypebeforesubmit-lesser-known-bit-usefulness
+https://keviv03.blogspot.com/2017/11/how-to-run-jquery-code-before-drupal.html
+https://www.youtube.com/watch?v=ei5Z5SyqQMo
+https://www.patrickvanefferen.nl/blog/ajax-drupal
+https://drupaljs.net/8.7.x/Drupal.Ajax.html
+https://www.hashbangcode.com/article/drupal-8-running-batch-through-ajax-request
+
+Imp https://tech.axelerant.com/how-to-make-a-drupal-9-select-filter-in-views-exposed-filter-dependent-on-another-via-ajax

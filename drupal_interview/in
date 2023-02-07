@@ -1,0 +1,31 @@
+The main difference between content and config entities is how they are stored and (at the moment) config entities are not fieldable (although this issue flirts with changing that).
+
+Config entities are stored using the CMI system, i.e. in yaml files in your config folder. Config entity yaml files follow a particular naming convention (prefix) and shipping a module with some default configuration is as easy as creating a new yaml file
+
+https://drupalize.me/tutorial/what-are-configuration-entities?p=3277
+
+extend ConfigEntityBase class
+
+exa
+
+https://www.drupal.org/docs/drupal-apis/entity-api/configuration-entity
+https://www.drupal.org/docs/drupal-apis/configuration-api/overview-of-configuration-vs-other-types-of-information
+
+name of your site, the content types and views 
+
+Overview of Configuration (vs. other types of information)
+Last updated on 22 July 2019
+In Drupal 8, there are several types of information:
+
+Content
+Information meant to be displayed on your site, and edited by users: article, basic page, images, files, etc.
+Session
+Information about individual users' interactions with the site, such as their current selection for a Views exposed filter. This is ephemeral and personalized to a single user.
+State
+Information that can change frequently and/or without user intervention. Examples: the time when Cron was last run, whether node access permissions need rebuilding, etc.
+Configuration
+Information about your site that is not content and changes infrequently, such as the name of your site, the content types and views you have defined, etc.
+Cache
+Information about your site that is also stored elsewhere. Caches exist only to speed up data retrieval. They never store canonical data.
+Settings
+Read-only information for your site hardcoded within settings.php.

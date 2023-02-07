@@ -1,0 +1,123 @@
+1) plugin-> create plugin, how to search existing plugins
+field_formatter
+https://www.drupal.org/docs/drupal-apis/plugin-api/annotations-based-plugins
+Blocks (see */src/Plugin/Block/* for many examples)
+Field formatters, Field widgets (see */src/Plugin/Field/* for many examples)
+All Views plugins (see */src/Plugin/views/* for many examples)
+Conditions (used for Block visibility in the core)
+Migrate source, process & destination plugins
+
+discover existing plugin
+create own plugin
+
+Annotation based discovery
+yaml based discovery
+static discovery
+plugin manager 
+
+small piece of functionality that are reusable
+1) Field widget
+2) Block
+3) image actions
+4) Field Formatter
+5) Menu link
+6) Menu local task
+7) View field
+8) View Filter
+
+/Users/u1353585/Desktop/lando-demo
+
+--------------------------------------------------------------------------------
+events-
+https://www.valuebound.com/resources/blog/how-to-define-an-event-dispatcher-and-subscriber-drupal-8
+
+create own event
+discover existing event
+eventsubscriber
+eventdispather
+
+create event
+extend Event class
+
+Dispatch event
+\Drupal::service('event_dispatcher')->dispatch();
+
+
+// How to dispatch an event in Drupal 8?
+$dispatcher = \Drupal::service('event_dispatcher');
+$event = new ExampleEvent();
+$dispatcher->dispatch(ExampleEvent::SUBMIT, $event);
+
+
+subscibe event
+implements EventSubscriberInterface 
+getSubscribedEvents() method
+
+routing.route_finished                              
+config.save                                         
+config.delete                                       
+config.importer.missing_content                     
+kernel.request                                      
+routing.route_dynamic                               
+config.importer.validate                            
+routing.route_alter                                 
+kernel.response                                     
+kernel.exception                                    
+kernel.view                                         
+kernel.finish_request                               
+site.maintenance_mode_request                       
+kernel.terminate                                    
+config.importer.import                              
+config.transform.import                             
+config.transform.export                             
+kernel.controller                                   
+render.page_display_variant.select                               
+account.set                                         
+Drupal\Core\File\Event\FileUploadSanitizeNameEvent  
+user.flood_blocked_user                             
+user.flood_blocked_ip                               
+entity_type.definition.create                       
+entity_type.definition.update                       
+entity_type.definition.delete            
+
+--------------------------------------------------------------------------------
+
+services
+use Symfony\Component\DependencyInjection\ContainerInterface;
+
+__construct()
+
+create()
+
+ public static function create(ContainerInterface $container) {
+    return new static(
+      $container->get('entity_type.manager'),
+      $container->get('plugin.manager.condition'),
+      $container->get('context.repository'),
+      $container->get('language_manager'),
+      $container->get('theme_handler'),
+      $container->get('plugin_form.factory')
+    );
+  }
+
+public function __construct(EntityTypeManagerInterface $entity_type_manager, ExecutableManagerInterface $manager, ContextRepositoryInterface $context_repository, LanguageManagerInterface $language, ThemeHandlerInterface $theme_handler, PluginFormFactoryInterface $plugin_form_manager) {
+    $this->storage = $entity_type_manager->getStorage('block');
+    $this->manager = $manager;
+    $this->contextRepository = $context_repository;
+    $this->language = $language;
+    $this->themeHandler = $theme_handler;
+    $this->pluginFormFactory = $plugin_form_manager;
+  }
+1) path.current
+2) path.validator
+3) current_route_match
+4) http_client_factory
+5) current_user
+6) language_manager
+7) event_dispatcher
+8) entity.form_builder
+9) database
+10) entity_type.manager
+
+coder module drupal-
+https://www.jeffgeerling.com/blog/2020/install-drupal-coder-and-php-codesniffer-your-drupal-project-lint-php-code

@@ -1,0 +1,17 @@
+vendor/bin/phpcs --standard=Drupal,DrupalPractice --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml modules/custom/welcome_module 
+
+vendor/bin/phpcbf --standard=Drupal,DrupalPractice --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml modules/custom/welcome_module
+
+https://github.com/drupal-up/drupal_phpcs/blob/master/phpcs.xml
+
+https://medium.com/@saptashwa04/configure-visual-studio-code-for-drupal-development-8183b5bbe794
+
+
+vscode editor
+https://www.youtube.com/watch?v=BE0hwSZUpI8
+https://gist.github.com/pbrocks/ab8d8c7ce200ce6f718181cebfc57a1e
+http://worldtimeapi.org/
+https://code.visualstudio.com/docs/?dv=osx
+https://www.drupal.org/docs/develop/development-tools/editors-and-ides/configuring-visual-studio-code
+https://www.youtube.com/watch?v=suMYe2__awc
+https://www.zyxware.com/articles/5774/how-to-configure-drupal-coding-standards-for-vs-code-editor

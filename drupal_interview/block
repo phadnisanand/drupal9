@@ -1,0 +1,28 @@
+create block in drupal-
+block_example.info.yml
+--> src/Plugin/Block
+
+1) Create module .info.yml file
+2) src/Plugin/Block/ExampleBlock.php
+3) annotation
+
+
+
+--------------------------------------------------------
+
+Adding Regions to Your Templates
+
+regions:
+header: 'Header' 
+
+then print-
+{{ page.header }} in page.html.twig
+
+
+https://github.com/xaiwant/D8ConfigForm/blob/master/xai/src/Form/SettingsForm.php
+--------------------------------------------------------
+
+preprocess false -> Whether the assets should be aggregated or not.
+type -> { type: external, minified: true }
+
+setAttribute

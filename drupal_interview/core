@@ -1,0 +1,68 @@
+Core modules-
+Configuration Translation
+Content Translation
+Interface Translation
+Language
+
+Migration-
+
+Migrate
+Migrate Drupal
+Migrate Drupal UI
+
+Web services
+HAL
+HTTP Basic Authentication
+JSON:API
+REST UI
+RESTful Web Services
+Serialization
+
+
+Workflows
+Views
+Views UI
+Update Manager
+Responsive Image
+Internal Dynamic Page Cache
+Internal Page Cache
+Layout Builder
+Layout Discovery
+Media
+Media Library
+Content Moderation
+Configuration Manager
+-------------------------------------------------
+BigPipe
+Internal Dynamic Page Cache
+Internal Page Cache
+Breakpoint
+
+Core themes-
+
+1) bartik
+2) claro
+3) classy
+4) seven
+5) olivero
+6) stark
+7) stable
+8) stable9 
+
+Core Profiles-
+
+testing_themes_blocks
+testing_site_config
+testing_multilingual_with_english
+testing_requirements
+testing_multilingual
+testing_missing_dependencies
+testing_install_profile_dependencies
+testing_config_overrides
+testing_install_profile_all_dependencies
+testing_config_import
+testing
+standard
+nightwatch_testing
+minimal
+demo_umami
