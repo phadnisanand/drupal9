@@ -58,6 +58,7 @@ https://drupaljs.net/8.7.x/Drupal.Ajax.html#~elementSettings
 https://www.hashbangcode.com/article/drupal-8-running-batch-through-ajax-request
 https://drupal.stackexchange.com/questions/312455/drupal-ajax-prototype-beforesubmit-results-in-ajax-error
 https://gist.github.com/sumanthkumarc/a61088cccf86722065dfa4b68711f386
+
 https://drupal.stackexchange.com/questions/49462/drupal-ajaxified-links-hook-into-requests-before-they-are-sent
 http://www.dave.st/content/drupalajaxprototypebeforesubmit-lesser-known-bit-usefulness
 https://keviv03.blogspot.com/2017/11/how-to-run-jquery-code-before-drupal.html
@@ -65,5 +66,12 @@ https://www.youtube.com/watch?v=ei5Z5SyqQMo
 https://www.patrickvanefferen.nl/blog/ajax-drupal
 https://drupaljs.net/8.7.x/Drupal.Ajax.html
 https://www.hashbangcode.com/article/drupal-8-running-batch-through-ajax-request
-
+----------------------------------------------------
 Imp https://tech.axelerant.com/how-to-make-a-drupal-9-select-filter-in-views-exposed-filter-dependent-on-another-via-ajax
+https://pixelthis.gr/content/drupal-7-vs-drupal-8-behaviors-and-jquery-once
+https://www.drupal.org/node/3158256
+https://ambientimpact.com/web/snippets/drupal-8-behaviors-and-jquery-once
+https://www.drupaldump.com/jquery-once-drupal-8
+https://www.npmjs.com/package/@drupal/once
+https://www.drupal.org/docs/drupal-apis/javascript-api/javascript-api-overview
+https://github.com/drupal-up

@@ -15,3 +15,13 @@ https://code.visualstudio.com/docs/?dv=osx
 https://www.drupal.org/docs/develop/development-tools/editors-and-ides/configuring-visual-studio-code
 https://www.youtube.com/watch?v=suMYe2__awc
 https://www.zyxware.com/articles/5774/how-to-configure-drupal-coding-standards-for-vs-code-editor
+
+drush uli --uri=http://localhost/drupal2
+export PATH="$PATH:$HOME/.composer/vendor/bin" 
+
+
+vendor/bin/phpcs --standard=Drupal,DrupalPractice --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml modules/customblock
+
+https://www.drupal.org/docs/8/modules/code-review-module/using-codermodule-to-auto-format-your-code-with-drush
+https://www.drupal.org/node/1419988
+
