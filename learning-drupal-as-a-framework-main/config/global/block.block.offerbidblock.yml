@@ -1,0 +1,28 @@
+uuid: 8ef29e9a-7054-4fd5-9323-927f34f05802
+langcode: en
+status: true
+dependencies:
+  module:
+    - offer
+    - user
+  theme:
+    - gin
+id: offerbidblock
+theme: gin
+region: content
+weight: -3
+provider: null
+plugin: offer_bidding_block
+settings:
+  id: offer_bidding_block
+  label: 'Offer bid block'
+  label_display: '0'
+  provider: offer
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
