@@ -1,0 +1,5 @@
+services:
+  mymodule.custom_middleware:
+    class: Drupal\mymodule\CustomMiddleware
+    tags:
+      - { name: http_middleware }

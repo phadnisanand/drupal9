@@ -1,0 +1,7 @@
+mymodule.display:
+  path: /display
+  defaults:
+    _controller: \Drupal\mymodule\Controller\ExampleController::exampleTranslation
+    _title: Example Translation
+  requirements:
+    _permission: access content
