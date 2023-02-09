@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_views_data_alter().
+ */
+function mymodule_views_data_alter(array &$data) {
+  $data['node']['product_total'] = array(
+    'title' => t('Product Cost Total'),
+    'group' => t('Product'),
+    'field' => array(
+      'title' => t('Product Cost Total'),
+      'help' => t('Show total of product price.'),
+      'id' => 'product_total',
+    ),
+  );
+}
