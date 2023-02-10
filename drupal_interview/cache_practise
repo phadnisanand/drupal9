@@ -1,0 +1,21 @@
+https://dev.acquia.com/article/coding-cache-tags-drupal-8
+https://weknowinc.com/blog/drupal-8-add-cache-metadata-render-arrays
+https://www.drupal.org/docs/drupal-apis/render-api/cacheability-of-render-arrays
+https://www.drupal.org/docs/8/api/cache-api/cacheabledependencyinterface-friends
+https://www.innoraft.com/blogs/how-does-entity-cache-work-drupal-8
+https://drupal.stackexchange.com/questions/255497/how-do-i-invalidate-the-cache-of-an-entity
+https://www.codimth.com/blog/web/drupal/how-invalidate-cache-drupal-8
+https://github.com/WidgetsBurritos/d8-studyguide/blob/master/4-back-end-development/4.6-performance.md
+https://www.sitepoint.com/exploring-cache-api-drupal-8/
+
+https://chromatichq.com/insights/entity-caching-strategies-drupal/
+https://www.o8.agency/blog/drupal-8-d8-performance-caching
+http://www.drupal8.ovh/en/tutoriels/155/drupal-8-tags-based-cache-system
+https://dev.acquia.com/article/coding-cache-tags-drupal-8
+https://drupal.stackexchange.com/questions/224574/how-to-invalidate-cache-contexts
+
+Cache contexts cannot be invalidated.
+Cache tags describe data dependencies. Data can change. When data changes, the associated cache tag(s) are invalidated, causing the cached results to get invalidated and then recomputed.
+
+Cache API
+https://www.codimth.com/blog/web/drupal/how-use-cache-api-drupal-8
