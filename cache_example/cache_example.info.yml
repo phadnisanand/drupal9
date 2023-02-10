@@ -1,0 +1,4 @@
+name: Cache Demo
+description: Cache Demo Example
+type: module
+core_version_requirement: ^8 || ^9 || ^10

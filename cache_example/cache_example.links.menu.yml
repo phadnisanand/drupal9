@@ -1,0 +1,6 @@
+cache_example.settings_form:
+  title: 'SettingsForm'
+  route_name: cache_example.settings_form
+  description: 'Cache demo'
+  parent: system.admin_config_system
+  weight: 99
