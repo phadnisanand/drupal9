@@ -1,0 +1,4 @@
+name: Route Demo
+type: module
+description: Demo Module Route
+core_version_requirement: ^8 || ^9

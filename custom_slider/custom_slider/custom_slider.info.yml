@@ -1,0 +1,4 @@
+name: Custom Slider
+type: module
+description: Custom Slider Module
+core_version_requirement: ^8 || ^9

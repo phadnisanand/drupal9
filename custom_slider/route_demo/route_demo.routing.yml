@@ -1,0 +1,16 @@
+routing_demo.popupform:
+  path: '/popupform'
+  defaults:
+    _form: '\Drupal\route_demo\Form\PopupForm'
+    _title: 'Popup Form'
+  requirements:
+    _permission: 'access content'
+    _access: 'TRUE'
+
+routing_demo.display_popup:
+  path: '/display-popup'
+  defaults:
+    _controller: '\Drupal\route_demo\Controller\PopupDemoController::content'
+    _title: 'Show Popup'
+  requirements:
+    _permission: 'access content'

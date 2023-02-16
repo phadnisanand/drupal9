@@ -1,0 +1,42 @@
+https://www.codimth.com/blog/web/drupal/custom-controller-json-response-drupal-8
+https://drupal-up.com/blog/custom-drupal-8-module-json-response
+
+Batch API
+https://www.codimth.com/blog/web/drupal/how-use-batch-api-drupal-8-9
+https://www.youtube.com/watch?v=ASWAReL1CmQ
+create custom table and insert data using api batch process
+https://github.com/codimth/codimth_batch
+https://github.com/orgs/codimth/repositories
+https://www.codimth.com/category/web/drupal
+
+Queue API  -> Queue items to allow later processing.
+https://www.valuebound.com/resources/blog/drupal-queue-worker-api
+https://www.tothenew.com/blog/how-to-implement-queue-workerapi-in-drupal-8/
+https://www.youtube.com/watch?v=RCU5csupaRo
+https://drupalsun.com/john-svensson/2017/01/04/cron-and-queues-drupal-8
+https://drupal.stackexchange.com/questions/206838/documentation-or-tutorial-on-using-batch-or-queue-services-api-programmatically
+https://github.com/LoriqueNET/drupal9-code-examples/tree/master/web/modules/custom/queue_worker_examples
+https://github.com/LoriqueNET/drupal9-code-examples
+https://www.lorique.net/posts/code-examples/drupal-9/async-with-queue-workers/
+https://www.alansaunders.co.uk/blog/queues-drupal-8-and-9
+https://github.com/LoriqueNET/drupal9-code-examples/tree/master/web/modules/custom/queue_worker_examples
+https://api.drupal.org/api/drupal/core%21core.api.php/group/queue/9.3.x
+
+Cron Job Drupal
+Custom drush command 
+https://www.codimth.com/blog/web/drupal/create-custom-drush-commands-drupal-8
+https://www.specbee.com/blogs/writing-your-own-custom-drush-9-and-10-commands
+https://github.com/KarimBoudjema/Drupal8-ex-batch-with-drush9-command/blob/master/drush.services.yml
+https://riptutorial.com/drupal/example/13083/an-example-module-to-help-understanding-the-queue-api-and-the-batch-api-in-drupal-8
+https://drupalsun.com/john-svensson/2017/01/04/cron-and-queues-drupal-8
+https://www.youtube.com/watch?v=BWt38Knghas
+https://www.youtube.com/watch?v=guVBf4wtqGw
+https://www.youtube.com/watch?v=0Gp62qZe6g8
+https://www.valuebound.com/resources/blog/batch-process-drupal-8
+https://www.drupal.org/project/queue_ui
+https://www.drupal.org/project/advancedqueue
+https://www.drupal.org/project/ultimate_cron
+https://www.easycron.com/
+
+https://www.drupal.org/node/873132
+ drush_backend_batch_process();

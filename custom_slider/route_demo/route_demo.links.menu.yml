@@ -1,0 +1,20 @@
+route_demo.admin_custom_menu:
+  title: 'Custom Menu'
+  description: 'Custom Admin Menu.'
+  route_name: routing_demo.popupform
+  parent: 'system.admin'
+  weight: 3
+
+route_demo.admin_custom_sub_menu:
+  title: 'Custom submenu'
+  description: 'Custom description'
+  route_name: routing_demo.popupform
+  parent: 'route_demo.admin_custom_menu'
+  weight: 0
+
+route_demo.admin_custom_sub_sub_menu:
+  title: 'Custom submenu level 2'
+  description: 'Custom description'
+  route_name: routing_demo.popupform
+  parent: 'route_demo.admin_custom_sub_menu'
+  weight: 0

@@ -1,0 +1,19 @@
+Draggable views
+https://3cwebservices.com/drupal/creating-drag-drop-sorting-interface-drupal-view
+https://www.youtube.com/watch?v=FaxUUSYokjE
+https://www.specbee.com/blogs/sorting-views-draggableviews-drupal-8-quick-walk-through
+https://www.drupal.org/project/draggableviews
+
+Multi step form
+https://www.codimth.com/blog/web/drupal/how-build-multi-step-forms-drupal-8
+https://www.digitalnadeem.com/drupal/how-to-create-a-multi-step-custom-form-in-drupal-8-9/
+
+Admin Menu
+https://drupal.stackexchange.com/questions/215394/how-can-i-add-items-to-the-admin-toolbar
+
+views module
+https://www.youtube.com/playlist?list=PLI_x5XaZMJqjws-darjXyw3BuVTt6FN0V
+
+Routing demo-
+https://www.hashbangcode.com/article/drupal-9-altering-routes-route-subscriber-service
+berramou.com/blog/drupal-8-how-change-default-userlogin-path

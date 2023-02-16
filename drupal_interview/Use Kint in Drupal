@@ -5,3 +5,4 @@ I selected kint as Variables Dumper in /admin/config/development/devel
 
 {{ kint() }} in a twig file
 https://github.com/kint-php/kint
+https://www.altagrade.com/blog/how-install-devel-and-kint-drupal-9

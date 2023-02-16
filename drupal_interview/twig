@@ -115,4 +115,4 @@ $form = \Drupal::formBuilder()->getForm(\Drupal\user\Form\UserLoginForm);
 --------------------------------------------------------------------------------------------------
 
 https://jacine.gitbooks.io/theming/content/advanced/render.html
-
+https://www.unleashed-technologies.com/blog/twig-tricks-you-need-know

@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Form alter and other hooks.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function custom_slider_theme() {
+  return [
+    'custom_slider' => [
+      'variables' => [
+        'data' => [],
+      ],
+    ],
+  ];
+}

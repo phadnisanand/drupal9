@@ -1,0 +1,16 @@
+	{{ attach_library('custom_slider/flex_slider_demo') }}
+
+  <div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+          {% for key,value in data %}
+            <li>
+  	    	    <img src="{{ value.image }}" />
+              <p class="flex-caption">{{ value.title }} </p>
+  	    		</li>
+         {% endfor%}
+          </ul>
+        </div>
+      </section>
+    </div>

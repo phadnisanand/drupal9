@@ -1,0 +1,6 @@
+services:
+  codimth_batch.commands:
+    class: \Drupal\codimth_batch\Commands\CodimthDrushCommands
+    tags:
+      - { name: drush.command }
+    arguments: ['@entity_type.manager']

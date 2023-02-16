@@ -1,0 +1,5 @@
+services:
+  route_demo.custom_service:
+    class: Drupal\route_demo\Routing\RouteAlterDemo
+    tags:
+      - { name: event_subscriber }

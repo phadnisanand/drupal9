@@ -1,0 +1,37 @@
+webp support-
+https://www.youtube.com/watch?v=yiqYVRmlvrc
+https://dev.acquia.com/tutorial/image-optimization-acquia-cloud
+https://gorannikolovski.com/blog/drupal-92-will-support-webp-images-out-box
+inside ckeditor need Inline Responsive Images module
+https://www.drupal.org/project/webp
+https://www.specbee.com/blogs/setup-responsive-images-in-drupal-9
+https://gole.ms/guidance/guide-media-and-responsive-images-drupal
+
+
+----------------------------------------------------------------------------------
+how to get data as per view mode of content type drupal
+https://mycode.blog/lakshmi/deep-understanding-display-modes-drupal-89
+https://www.droptica.com/blog/custom-entity-forms-example-user-editing-and-registration/
+https://www.drupal.org/node/157775
+
+----------------------------------------------------------------------------------
+create custom slider module drupal
+https://www.youtube.com/watch?v=MVD2-dU_nis
+https://getbootstrap.com/docs/4.0/components/carousel/
+----------------------------------------------------------------------------------
+ckeditor plugins
+https://www.youtube.com/watch?v=8BSzviD9RhI&list=PLcpnTCVj5sv6f2ZvsJkzzThPAqUNsprix&index=4
+https://affinitybridge.com/blog/how-install-ckeditor-plugins-drupal-8
+https://www.axelerant.com/blog/drupal-8-and-approach-ckeditor-plugins
+https://www.drupal.org/docs/contributed-modules/ckeditor/contributed-modules-and-plug-ins
+https://ostraining.com/blog/drupal/how-to-install-ckeditor-plugins-in-drupal-8/
+https://opensenselabs.com/blog/tech/creating-custom-ckeditor-plugin-drupal-8
+https://ckeditor.com/
+https://affinitybridge.com/blog/how-install-ckeditor-plugins-drupal-8
+----------------------------------------------------------------------------------
+json api, rest api and graphql api
+https://www.youtube.com/watch?v=--ZL3EAhnwc&list=PLZOQ_ZMpYrZsyO-3IstImK1okrpfAjuMZ
+https://www.youtube.com/watch?v=HIZEYRGmLow
+https://www.youtube.com/watch?v=4uYuJStUw-M
+https://www.youtube.com/watch?v=xbBlbEcJmSo
+https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/jsonapi-vs-cores-rest-module

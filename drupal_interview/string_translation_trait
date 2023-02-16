@@ -1,0 +1,14 @@
+https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21StringTranslation%21StringTranslationTrait.php/trait/StringTranslationTrait/8.2.x
+
+use Drupal\Core\StringTranslation\StringTranslationTrait;
+use StringTranslationTrait;
+
+$this->t()
+
+get t() and formatPlural() methods.
+
+
+https://pixelthis.gr/index.php/content/how-support-translation-your-custom-service-drupal-8-9
+https://pixelthis.gr/index.php/article-categories/module-development
+https://www.codimth.com/blog/web/drupal/how-inject-translator-service-my-service-drupal-8
+https://gist.github.com/ozin7/64931d66308c0b6b80f994f7f6200e3e
