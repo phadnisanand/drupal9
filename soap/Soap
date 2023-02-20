@@ -1,0 +1,14 @@
+Soap web service drupal
+https://github.com/roytuts/php-soap
+https://www.w3schools.com/xml/tempconvert.asmx?WSDL
+https://roytuts.com/how-to-create-and-consume-soap-web-service-using-soapserver-and-soapclient-in-php/
+https://www.keboca.com/drupal-8-consume-asmx-soap-service-exchange-rate-bccr
+https://github.com/kenneth-bolivar-castro/exchange-rate
+https://www.weareaccess.co.uk/blog/2018/02/creating-soap-server-drupal-8
+
+https://github.com/juampynr/Drupal-Services-And-SOAP-test
+https://www.drupal.org/node/1101362
+
+https://stackoverflow.com/questions/9255274/making-a-soap-request-in-drupal
+
+Drupal doesnt have any specific soap functionality - you can use the built in PHP client. There should be a WSDL file you can use to generate your soap client. Something like this:
