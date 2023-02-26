@@ -1,0 +1,10 @@
+pilot.basic:
+  type: mapping
+  label: 'Pilot basic settings'
+  mapping:
+    one:
+      type: string
+      label: 'A field named One'
+    url:
+      type: string
+      label: 'A field named URL'

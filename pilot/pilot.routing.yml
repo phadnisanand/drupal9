@@ -1,0 +1,15 @@
+pilot.admin_basic:
+  path: '/admin/config/pilot/basic'
+  defaults:
+    _title: 'Pilot Basic Configuration'
+    _form: 'Drupal\pilot\Form\BasicForm'
+  requirements:
+    _permission: 'administer site configuration'
+
+pilot.list:
+  path: '/welcome/pilot'
+  defaults:
+    _controller: '\Drupal\pilot\Controller\WelcomeController::displayData'
+    _title: 'Welcome to My Module in Drupal 9'
+  requirements:
+    _permission: 'access content'

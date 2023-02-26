@@ -1,0 +1,51 @@
+<?php
+
+/**
+ * Implements hook_help().
+ */
+function pilot_help($path, $arg) {
+  switch ($path) {
+    case 'admin/help#pilot':
+      return t('No help for you!');
+  }
+}
+
+/**
+ * Implements hook_permission().
+ */
+function pilot_permission() {
+  return array(
+    'fly high' => array(
+      'title' => t('Fly High'),
+      'description' => t('Grant permission to fly high.'),
+      'restrict access' => TRUE,
+    ),
+  );
+}
+
+
+/******************************************************************************/
+
+/**
+ * Helper function to provide a list of colors for the Colorize image effect
+ * plugin.
+ */
+function pilot_colorize_colors() {
+  return array(
+    'lime' => array(
+      'title' => t('Lime'),
+      'colors' => array(110, 230, 112),
+    ),
+    'hotpink' => array(
+      'title' => t('Hot Pink'),
+      'colors' => array(255, 0, 186),
+    ),
+  );
+}
+
+/**
+ * Implements hook_pilot_person_info_alter()
+ */
+function pilot_pilot_person_info_alter(&$persons) {
+  $persons['dave']['age'] = '12';
+}
