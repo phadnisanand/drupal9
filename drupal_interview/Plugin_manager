@@ -1,0 +1,42 @@
+Plugin system drupal
+
+create own plugin manager 
+https://www.youtube.com/watch?v=2o5uY-iOoMo
+https://www.valuebound.com/resources/blog/drupal-8-extending-module-using-plugin-manager
+https://github.com/helior/pilot/blob/master/src/Form/BasicForm.php
+https://www.valuebound.com/resources/blog/drupal-8-extending-module-using-plugin-manager
+https://spinningcode.org/2017/01/drupal-8-plugins-are-addictive/
+https://www.sitepoint.com/symfony-drupal-8/
+
+php ajax-
+https://www.youtube.com/playlist?list=PL0b6OzIxLPbxO0_8Av3c-9_l5RM5uJK8U
+https://www.youtube.com/watch?v=PMERdlfL6LE&list=PLFHz2csJcgk-t8ErN1BHUUxTNj45dkSqS
+https://www.yahoobaba.net
+https://www.yahoobaba.net/project/basic-php-ajax-crud-application
+https://www.youtube.com/@YahooBaba
+drupal and drupal commerce topics list and practise
+
+Symfony
+https://www.youtube.com/watch?v=PMERdlfL6LE
+
+Show all error when developing
+https://www.drupal.org/docs/7/creating-custom-modules/show-all-errors-while-developing
+settings.php:
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
+
+https://drupal.stackexchange.com/questions/127182/how-do-i-enable-developer-debug-mode
+
+$config['system.logging']['error_level'] = 'verbose';
+
+---------------------------------------------------------------------------------------------
+
+Commerce
+
+https://www.drupal.org/docs/8/modules/commerce-cart-flyout/add-to-cart-form-theming
+https://www.drupal.org/forum/support/module-development-and-code-questions/2019-01-18/how-to-customize-the-add-to-cart
+https://drupal.stackexchange.com/questions/180382/how-to-customize-the-add-to-cart-form-using-hook-form-alter
+https://www.agoradesign.at/blog/using-add-cart-links-instead-forms-drupal-commerce-2
+https://drupallearning.com/add-custom-class-form-programmatically
+-------------------------------
