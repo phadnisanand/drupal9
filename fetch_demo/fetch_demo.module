@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Form alter and other hooks.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function fetch_demo_theme() {
+  return [
+    'fetch_demo' => [
+      'variables' => [
+      ],
+    ],
+  ];
+}

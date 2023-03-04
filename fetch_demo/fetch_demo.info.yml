@@ -1,0 +1,4 @@
+name: Fetch Demo
+type: module
+description: Fetch Api Module Route
+core_version_requirement: ^8 || ^9 || ^10

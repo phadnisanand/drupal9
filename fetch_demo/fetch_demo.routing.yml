@@ -1,0 +1,31 @@
+fetch_demo.display_popup:
+  path: '/getdata'
+  defaults:
+    _controller: '\Drupal\fetch_demo\Controller\FetchDemoController::getContent'
+    _title: 'Fetch Api demo'
+  requirements:
+    _permission: 'access content'
+
+fetch_demo.showcontent:
+  path: '/showdata'
+  defaults:
+    _controller: '\Drupal\fetch_demo\Controller\FetchDemoController::displayContent'
+    _title: 'Fetch Api demo'
+  requirements:
+    _permission: 'access content'
+
+fetch_demo.postcontent:
+  path: '/postdata'
+  defaults:
+    _controller: '\Drupal\fetch_demo\Controller\FetchDemoController::postContent'
+    _title: 'Fetch Api demo'
+  requirements:
+    _permission: 'access content'
+   
+fetch_demo.deletecontent:
+  path: '/deletedata/{id}'
+  defaults:
+    _controller: '\Drupal\fetch_demo\Controller\FetchDemoController::deleteContent'
+    _title: 'Fetch Api demo'
+  requirements:
+    _permission: 'access content'
