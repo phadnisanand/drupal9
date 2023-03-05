@@ -1,0 +1,5 @@
+libraries_testing:
+  version: 1.x
+  js:
+    /libraries/test/test.js: {}
+ 

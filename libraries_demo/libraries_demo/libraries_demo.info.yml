@@ -1,0 +1,6 @@
+name: libraries Demo
+type: module
+description: libraries Module
+core_version_requirement: ^8 || ^9 || ^10
+dependencies:
+  - libraries

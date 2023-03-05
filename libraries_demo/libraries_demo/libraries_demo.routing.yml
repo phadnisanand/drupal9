@@ -1,0 +1,23 @@
+libraries_demo.display_dynamic:
+  path: '/getdata'
+  defaults:
+    _controller: '\Drupal\libraries_demo\Controller\DemoController::disContent'
+    _title: 'demo'
+  requirements:
+    _permission: 'access content'
+
+libraries_demo.display_static:
+  path: '/getsdata'
+  defaults:
+    _controller: '\Drupal\libraries_demo\Controller\DemoController::staticContent'
+    _title: 'demo'
+  requirements:
+    _permission: 'access content'
+
+libraries_demo.display_php:
+  path: '/getphpdata'
+  defaults:
+    _controller: '\Drupal\libraries_demo\Controller\DemoController::getphpContent'
+    _title: 'demo'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Form alter and other hooks.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function libraries_demo_theme() {
+  return [
+    'libraries_demo' => [
+      'variables' => [
+      ],
+    ],
+  ];
+}
+
+
+/**
+ * Implements hook_library_info_build().
+ *
+ * @return array
+ */
+function libraries_demo_library_info_build() {
+  $libraries = [];
+
+  $libraries['test'] = [
+    'js' => [
+      '/libraries/test/test.js' => [],
+    ],
+  ];
+
+  return $libraries;
+}
