@@ -1,0 +1,41 @@
+using external php and javascript libraries in drupal-
+
+https://www.drupal.org/project/libraries
+https://www.drupal.org/project/libraries_ui
+https://agaric.gitlab.io/raw-notes/notes/2019-09-15-adding-a-javascript-library-to-a-drupal-8-module-so-it-just-works-with-composer-managed-projects/
+https://stackoverflow.com/questions/43121292/how-to-install-third-party-libraries-in-drupal-8-with-composer-that-are-not-on-p
+https://asset-packagist.org/
+https://packagist.org/packages/mpdf/mpdf
+
+https://www.zyxware.com/articles/5507/solved-how-to-include-third-party-libraries-in-drupal-8-for-custom-modules
+https://cheppers.com/post/tcpdf-module-ported-drupal-8/
+
+https://agaric.gitlab.io/raw-notes/notes/2019-09-15-adding-a-javascript-library-to-a-drupal-8-module-so-it-just-works-with-composer-managed-projects/
+https://www.drupal.org/docs/contributed-modules/libraries-api-8x/installing-an-external-library-that-is-required-by-a-contributed-module
+https://www.valuebound.com/resources/blog/how-to-generate-pdf-of-html-code-drupal-8
+
+https://www.drupal.org/docs/external-libraries-in-core/external-javascript-libraries
+
+https://www.drupal.org/docs/external-libraries-in-core/external-css-libraries
+
+https://www.drupal.org/docs/external-libraries-in-core/external-php-libraries
+drupal.org/project/color_field
+
+Nusoap php library Drupal
+https://www.morpht.com/blog/drupal-and-composer-part-2-managing-drupal-8-site-composer
+
+https://www.youtube.com/watch?v=ZEUcRDnMUwg
+https://www.youtube.com/watch?v=_areQ1gqx8U
+
+https://www.drupal.org/project/superfish/
+https://www.drupal.org/project/flexslider
+https://www.drupal.org/project/color_field
+
+
+include 3rd party php library using composer-
+https://www.youtube.com/watch?v=UcN319PHvGk
+https://www.youtube.com/watch?v=esT7SsD59Hg
+https://www.daggerhartlab.com/composer-managed-custom-wordpress-drupal-dependencies/
+https://drupal-up.com/blog/add-composerjson-package-your-custom-drupal-8-module
+https://www.drupal.org/docs/develop/creating-modules/add-a-composerjson-file
+https://www.drupal.org/docs/develop/using-composer/managing-dependencies-for-a-custom-project
