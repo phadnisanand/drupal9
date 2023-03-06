@@ -21,3 +21,11 @@ libraries_demo.display_php:
     _title: 'demo'
   requirements:
     _permission: 'access content'
+
+libraries_demo.display_library:
+  path: '/getlib'
+  defaults:
+    _controller: '\Drupal\libraries_demo\Controller\DemoController::getlib'
+    _title: 'demo'
+  requirements:
+    _permission: 'access content'
