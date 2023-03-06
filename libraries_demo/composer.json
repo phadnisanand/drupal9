@@ -38,7 +38,8 @@
         "jquery/simplecolor": "1.2.1",
         "mpdf/mpdf": "^8.1",
         "vlucas/phpdotenv": "^5.1",
-        "webflo/drupal-finder": "^1.2"
+        "webflo/drupal-finder": "^1.2",
+        "wikimedia/composer-merge-plugin": "^2.0"
     },
     "require-dev": {
         "drupal/core-dev": "^9.4"
@@ -55,7 +56,8 @@
             "composer/installers": true,
             "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "wikimedia/composer-merge-plugin": true
         }
     },
     "autoload": {
@@ -97,6 +99,13 @@
             "drupal/core": "-p2"
         },
         "patches": {
+        },
+         "merge-plugin": {
+          "include": [
+            "web/modules/custom/*/composer.json",
+            "web/modules/custom/*/modules/*/composer.json",
+            "web/themes/custom/*/composer.json"
+          ]
         }
     }
 }
