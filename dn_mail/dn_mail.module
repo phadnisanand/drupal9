@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function dn_mail_theme($existing, $type, $theme, $path) {
+ 
+  return [
+    'email_template' => [
+       'variables' => array('fname' => NULL,'lname' => NULL),
+    ],
+  ];
+}  
