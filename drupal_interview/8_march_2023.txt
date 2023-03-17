@@ -1,0 +1,60 @@
+Drupal migration api -
+https://github.com/saranyapurushothaman/d4drupal/tree/main/migrated_content
+https://www.youtube.com/watch?v=cZhDF1kY1fM&t=0s
+https://www.youtube.com/watch?v=OCnJPzuD6T4
+
+https://github.com/saranyapurushothaman/d4drupal
+https://evolvingweb.com/blog/drupal-8-migration-migrating-basic-data-part-1
+https://antistatique.net/en/blog/migrate-your-drupal-7-site-to-drupal-9
+https://github.com/saranyapurushothaman/d4drupal/tree/main/migration_feature
+https://www.drupal.org/docs/drupal-apis/migrate-api/migrate-api-overview
+https://www.drupal.org/docs/drupal-apis/migrate-api
+https://www.drupal.org/docs/8/api/migrate-api/migrate-source-plugins
+https://www.drupal.org/docs/drupal-apis/migrate-api/executing-migrations
+https://www.drupal.org/docs/drupal-apis/migrate-api/migrate-destination-plugins-examples
+https://www.drupal.org/docs/8/api/migrate-api/migrate-process-plugins
+https://api.drupal.org/api/drupal/core%21modules%21migrate%21migrate.api.php/group/migration/9.3.x
+https://www.youtube.com/watch?v=J3UDSpwbk7c
+https://understanddrupal.com/courses/31-days-of-migrations/
+https://understanddrupal.com/lessons/list-migration-related-drupal-modules/
+https://github.com/jigarius/drupal-migration-example/tree/8.x/import
+
+https://evolvingweb.com/blog/drupal-8-migration-migrating-basic-data-part-1
+https://evolvingweb.com/blog/drupal-8-migration-migrating-taxonomy-term-references-part-2
+https://evolvingweb.com/blog/drupal-8-migration-migrating-files-images-part-3
+https://www.specbee.com/blogs/how-migrate-drupal-8-sql-source-6-simple-steps
+https://atendesigngroup.com/articles/drupal-8-content-migrations-csv-spreadsheet
+
+https://ostraining.com/blog/drupal/migrate-data-from-a-csv-file-in-drupal-8-9/
+https://www.jeffgeerling.com/blog/2016/migrate-custom-json-feed-drupal-8-migrate-source-json
+https://colorfield.be/blog/drupal-8-json-custom-migration
+
+https://www.specbee.com/blogs/how-migrate-drupal-8-sql-source-6-simple-steps
+settings.php-
+$databases['default']['default'] = array (
+  'database' => 'drupal',
+  'username' => 'root',
+  'password' => '',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
+  'driver' => 'mysql',
+  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
+);
+$databases['migrate']['default'] = array (
+  'database' => 'drupal',
+  'username' => 'root',
+  'password' => '',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
+  'driver' => 'mysql',
+  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
+);
+
+https://www.drush.org/11.x/commands/migrate_import/
+https://understanddrupal.com/lessons/migrating-csv-files-drupal/
+
+

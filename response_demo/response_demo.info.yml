@@ -1,0 +1,4 @@
+name: Response Demo
+type: module
+description: Response Module
+core_version_requirement:  ^9 || ^10

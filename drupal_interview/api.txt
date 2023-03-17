@@ -1,0 +1,22 @@
+Rest api
+https://www.agiledrop.com/blog/how-create-node-drupal-8-using-rest
+https://www.valuebound.com/resources/blog/creating-custom-restful-web-service-drupal-9
+https://www.specbee.com/blogs/exposing-your-api-in-drupal-9
+https://drupalize.me/blog/201401/introduction-restful-web-services-drupal-8
+
+JSON api only need to use
+https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/jsonapi-vs-cores-rest-module
+https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/fetching-resources-get
+https://antistatique.net/en/blog/how-to-create-a-custom-endpoint-using-drupal-jsonapi
+https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module
+https://www.digitalnadeem.com/drupal/how-to-configure-json-api-module-and-create-web-services-using-json-api-specifications-in-drupal/
+https://opensenselabs.com/blog/articles/road-jsonapi-drupal-8
+
+authentication
+https://www.drupal.org/docs/contributed-modules/api-authentication/jwt-authentication
+https://www.drupal.org/docs/contributed-modules/api-authentication/setup-basic-authentication
+https://www.youtube.com/watch?v=4uYuJStUw-M
+https://www.specbee.com/blogs/exposing-your-api-in-drupal-9
+https://www.youtube.com/watch?v=kohs5MXESXc
+https://www.youtube.com/watch?v=R7HNjH7TBeM
+https://www.base64encode.org/

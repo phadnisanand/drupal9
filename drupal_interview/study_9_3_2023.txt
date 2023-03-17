@@ -1,0 +1,19 @@
+https://redcrackle.com/blog/drupal-8/free-tutorials-list
+----------------------------------------------------------------------------------------------------
+
+base field and Configurable Fields field api / entity api drupal-
+https://www.berramou.com/blog/drupal-8-how-add-constraint-filed-content-type-unique-count
+https://jigarius.com/blog/drupal-entity-validation-api
+https://www.drupal.org/docs/drupal-apis/entity-api/entity-validation-api/entity-validation-api-overview
+https://www.drupal.org/docs/drupal-apis/entity-api/entity-validation-api
+https://www.berramou.com/blog/drupal-8-create-custom-validation-constraint
+https://www.drupal.org/docs/drupal-apis/entity-api/entity-validation-api/defining-constraints-validations-on-entities-andor-fields
+https://www.drupalwatchdog.net/volume-5/issue-2/introducing-drupal-8s-entity-validation-api
+https://jigarius.com/blog/drupal-entity-validation-api#conclusion
+https://gorannikolovski.com/blog/entity-field-validators-and-constraints-drupal
+https://github.com/codeenigma/entity-validation-examples
+https://www.codeenigma.com/blog/introduction-drupal-8-entity-validation
+https://elwtnya.com/post/validation-constraints-drupal/
+
+constraint and validater 
+https://github.com/codeenigma/entity-validation-examples

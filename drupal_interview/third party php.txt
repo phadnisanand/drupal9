@@ -1,0 +1,29 @@
+Drupal study
+https://learning.oreilly.com/library/view/drupal-10-development/9781803234960/B18548_TOC_ePub.xhtml
+
+Creating a custom Drush command
+https://www.lilengine.co/articles/creating-custom-drush-command-drupal-8-drush-9
+https://www.specbee.com/blogs/writing-your-own-custom-drush-9-and-10-commands
+https://www.axelerant.com/blog/how-to-write-custom-drush-9-commands-for-drupal-8
+https://www.valuebound.com/resources/blog/how-to-write-custom-drush-commands-drupal-8
+https://www.droptica.com/blog/creating-custom-drush-9-commands-drupal-8/
+
+third party php library-
+https://packagist.org/packages/alsar/stack-ip-restrict
+https://books.google.co.in/books?id=HppGDwAAQBAJ&pg=PA328&lpg=PA328&dq=composer+require+alsar/stack-ip-restrict+drupal&source=bl&ots=SXaT-4Bvs8&sig=ACfU3U27PeYK60IbGqUy0tkwUKCHUUCdFA&hl=en&sa=X&ved=2ahUKEwj0ofHa48b9AhVP4DgGHcbVBjIQ6AF6BAgcEAM#v=onepage&q=composer%20require%20alsar%2Fstack-ip-restrict%20drupal&f=false
+drupal 8 development cookbook
+https://www.drupal.org/project/composer_manager
+
+use third party php library in your custom module
+https://www.zyxware.com/articles/5507/solved-how-to-include-third-party-libraries-in-drupal-8-for-custom-modules
+https://drupalsun.com/wellmem/2016/09/05/solved-how-include-third-party-libraries-drupal-8-custom-modules
+https://www.morpht.com/blog/drupal-and-composer-part-4-composer-drupal-developers
+https://learning.oreilly.com/library/view/drupal-8-enterprise/9781787283190/ch25s04.html
+https://learning.oreilly.com/library/view/drupal-8-enterprise/9781787283190/ch25s03.html
+https://packagist.org/
+
+create module with composer.json file-
+https://www.drupal.org/docs/develop/creating-modules/add-a-composerjson-file
+https://www.drupal.org/docs/develop/using-composer/managing-dependencies-for-a-custom-project
+https://www.youtube.com/watch?v=UcN319PHvGk
+https://www.drupal.org/docs/develop/using-composer

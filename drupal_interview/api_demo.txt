@@ -1,0 +1,26 @@
+https://www.digitalnadeem.com/drupal/how-to-configure-json-api-module-and-create-web-services-using-json-api-specifications-in-drupal/
+
+set Cors drupal-
+https://www.codimth.com/blog/web/drupal/how-set-cors-drupal-8
+https://www.drupal.org/docs/8/core/modules/rest/3-post-for-creating-content-entities
+https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/creating-new-resources-post
+https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/updating-existing-resources-patch
+https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/security-considerations
+
+https://www.venkatadapa.in/2022/06/how-to-configure-cors-in-drupal-9.html
+https://fabwebstudio.com/blog/cors-cross-origin-resource-sharing-drupal-8
+https://butlerraines.com/code-stuff/drupal-8-rest-api-no-access-control-allow-origin-header-present-requested-resource
+
+https://www.digitalnadeem.com/drupal/drupal-8-rest-api-tutorial-and-creating-custom-rest-api/
+https://www.youtube.com/watch?app=desktop&v=rAf5l_tPMzg
+https://www.youtube.com/watch?v=kohs5MXESXc
+
+https://www.youtube.com/watch?v=ab4xj7CrXHM
+https://www.mediacurrent.com/blog/using-json-web-tokens-jwt-authenticate-requests-rest-resources-drupal-8
+https://jwt.io/#debugger
+https://www.youtube.com/@ProgramWithGio
+https://preston.so/writing/decoupled-drupal-authentication-with-json-web-tokens/
+
+JSON API
+Oauth 2.0 / JWT
+Email html

@@ -1,0 +1,7 @@
+response_demo.display_response:
+  path: '/display'
+  defaults:
+    _controller: '\Drupal\response_demo\Controller\DemoController::content'
+    _title: 'Show Response'
+  requirements:
+    _permission: 'access content'

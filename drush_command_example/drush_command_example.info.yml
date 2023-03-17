@@ -1,0 +1,5 @@
+name: Drush Command Example
+description: Provides examples for creating custom Drush commands.
+core: 8.x
+core_version_requirement: ^8 || ^9
+type: module
