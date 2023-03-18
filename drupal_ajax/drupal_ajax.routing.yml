@@ -1,0 +1,7 @@
+drupal_ajax.display_response:
+  path: '/display'
+  defaults:
+    _controller: '\Drupal\drupal_ajax\Controller\DemoController::content'
+    _title: 'Show Response'
+  requirements:
+    _permission: 'access content'

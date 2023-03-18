@@ -1,0 +1,5 @@
+<?php
+
+function drupal_ajax_page_attachments(&$variables) {
+  $variables['#attached']['library'][] = 'drupal_ajax/drupal_ajax_testing';
+}
