@@ -67,7 +67,7 @@
                 "web-root": "./"
             }
         },
-				 "installer-types": [
+	"installer-types": [
             "npm-asset",
             "bower-asset"
         ],
