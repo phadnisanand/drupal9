@@ -1,0 +1,5 @@
+name: Drupal JS Demo
+type: module
+description: An example Drupal JS Demo.
+package: Codimth
+core_version_requirement:  ^9 || ^10

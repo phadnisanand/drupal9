@@ -1,0 +1,15 @@
+drupaljs_demo.display_response:
+  path: '/display'
+  defaults:
+    _controller: '\Drupal\drupaljs_demo\Controller\DemoController::content'
+    _title: 'Show Response'
+  requirements:
+    _permission: 'access content'
+   
+drupaljs_demo.ajax_response:
+  path: '/ajaxdisplay'
+  defaults:
+    _controller: '\Drupal\drupaljs_demo\Controller\DemoController::ajaxcontent'
+    _title: 'Show Response'
+  requirements:
+    _permission: 'access content'

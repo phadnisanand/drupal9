@@ -1,0 +1,14 @@
+demo:
+  js:
+    js/custom.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    - core/drupal.autocomplete
+    - core/jquery.ui
+    - core/jquery.once
+    - core/drupal.ajax
+    - core/drupal.dialog
+    - core/system
+    - core/drupal
+    - core/drupal.message

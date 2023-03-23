@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+<h2>The matchMedia() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+let text;
+if (window.matchMedia("(max-width: 480px)").matches) {
+  text = "you are in mobile";
+} else if (window.matchMedia("(max-width: 640px)").matches) {
+  text = "you are in tablet.";
+} else {
+  text = "you are in desktop.";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

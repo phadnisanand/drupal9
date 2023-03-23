@@ -1,0 +1,59 @@
+https://drupaljs.net/  -> javascript libraries drupal core  ( imp)
+https://www.therussianlullaby.com/blog/guide-how-to-integrate-javascript-in-drupal-8-9/  -> imp
+https://www.youtube.com/watch?v=BZYbC6xiRNQ  -> Drupal Behaviors
+core/libraries.yml -> contains all javascript libraries which we can use
+====================================================================================================
+ajax drupal-
+https://www.thirdandgrove.com/insights/rendering-view-ajax-drupal-8/
+https://drupal.stackexchange.com/questions/226751/manually-invoking-ajax-commands-when-an-ajax-callback-is-not-an-ajax-form-callb
+https://www.patrickvanefferen.nl/blog/ajax-drupal
+https://opensenselabs.com/blog/tech/how-use-ajax-api-drupal-8
+https://mycode.blog/lakshmi/implement-ajax-callback-function-drupal-89
+http://niraj-meegama.info/simple-ajax-call-drupal-8
+https://www.codimth.com/blog/web/drupal/dependent-select-dropdowns-using-ajax-node-addedit-form-drupal-8-9
+https://www.valuebound.com/resources/blog/how-to-build-a-simple-form-using-ajax-drupal-8
+https://www.youtube.com/watch?v=YbyoY8mUv2A
+---------------------------------------------------------------------------------------------------------------------
+drupal.dialog->
+https://gist.github.com/devudit/dcdb76502975a13dd7c623cecc04f509  -> drupal.dialog.js
+https://www.hashbangcode.com/article/drupal-9-creating-ajax-dialogs
+https://drupal.stackexchange.com/questions/296820/open-ajax-dialog-with-javascript
+https://www.drupal.org/docs/drupal-apis/ajax-api/ajax-dialog-boxes
+https://drupalsun.com/philipnorton42/2022/10/30/drupal-9-creating-ajax-dialogs
+https://www.drupal.org/project/ajax_link
+---------------------------------------------------------------------------------------------------------------------
+autocomplete.js->
+https://www.npmjs.com/package/@drupal/autocomplete
+https://drupal.stackexchange.com/questions/302879/how-to-add-an-autocomplete-field-with-pure-javascript
+---------------------------------------------------------------------------------------------------------------------
+datepicker->
+https://www.linkedin.com/pulse/jquery-dateicker-drupal-9-pankaj-raundal?trk=articles_directory
+---------------------------------------------------------------------------------------------------------------------
+dropbutton-
+https://drupal.stackexchange.com/questions/150271/example-for-creating-dropbutton
+---------------------------------------------------------------------------------------------------------------------
+is-active->
+https://drupal.stackexchange.com/questions/201921/how-do-i-know-if-a-link-has-the-active-class
+---------------------------------------------------------------------------------------------------------------------
+messages api javascript drupal
+https://drupal.stackexchange.com/questions/293226/javascript-messages-api-error
+https://drupaljs.net/9.0.x/message.js.html
+https://www.drupal.org/docs/drupal-apis/javascript-api/messages-api
+
+---------------------------------------------------------------------------------------------------------------------
+use-ajax class-
+https://drupal.stackexchange.com/questions/183306/how-do-i-create-an-ajax-link
+http://niraj-meegama.info/simple-ajax-call-drupal-8
+---------------------------------------------------------------------------------------------------------------------
+use any js external libraries in drupal
+https://underscorejs.org/
+https://www.npmjs.com/
+https://asset-packagist.org/  ( imp)
+https://linuxhint.com/download-javascript-libraries-packages-npm/
+https://www.bounteous.com/insights/2020/04/22/guide-loading-external-javascript-drupal
+https://www.drupal.org/docs/develop/creating-modules/adding-assets-css-js-to-a-drupal-module-via-librariesyml
+https://ostraining.com/blog/drupal/how-to-use-the-slick-module-in-drupal-8/
+https://www.valuebound.com/resources/blog/how-to-build-a-custom-slider-using-slick-library-drupal-8
+https://www.skillmaticace.com/blog/asset-packagist-makes-it-easy-add-external-javascript-libraries-drupal-projects  ( imp)
+https://www.specbee.com/blogs/brief-guide-node-package-manager-npm-drupal
+https://www.youtube.com/watch?v=Lo3ChjQkzok
