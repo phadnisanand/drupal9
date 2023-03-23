@@ -1,0 +1,38 @@
+custom action in drupal 
+https://www.alansaunders.co.uk/blog/custom-actions-drupal-89
+https://www.codimth.com/blog/web/drupal/create-custom-bulk-node-action-drupal-8-9
+https://www.drupal.org/node/2330631
+https://drupal.stackexchange.com/questions/230742/how-to-create-my-own-custom-simple-action-in-d8
+
+
+view bulk operation 
+https://gist.github.com/markaspot/f9fad2ce17dd40679c2696c8c13aaf87
+https://www.codimth.com/blog/web/drupal/rules-module-how-create-custom-rules-action-drupal-8
+https://www.droptica.com/blog/custom-actions-views-bulk-operations-module-drupal-8/
+https://drupalconsole.com/docs/hu/commands/generate-plugin-rules-action
+https://www.flocondetoile.fr/blog/create-action-custom-mass-updates-drupal-8
+https://www.studiopresent.com/blog/perform-actions-flag/unflag-drupal-8
+event trigger action drupal
+http://api.hostdog.eu/api/drupal-9/drupal%21core%21modules%21action%21action.api.php/function/hook_action_info/9.x
+
+trigger action on hooks and events
+https://drupal.stackexchange.com/questions/246353/trigger-an-action-programmatically
+
+$action = \Drupal::entityTypeManager()
+->getStorage('action')
+->load('display_a_message_to_the_user');    // custom action
+if ($action) {
+  $action->execute([$entity]);
+}
+
+
+$action = \Drupal::entityTypeManager()
+  ->getStorage('action')
+  ->load('send_mail');
+if ($action) {
+  $action->execute($entity);
+}
+
+view bulk operation-
+https://www.drupal.org/docs/contributed-modules/views-bulk-operations-vbo
+https://www.drupal.org/docs/contributed-modules/views-bulk-operations-vbo/creating-a-new-action

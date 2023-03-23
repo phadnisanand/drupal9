@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * Implements hook_user_login().
+ */
+
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\Core\Url;
+
+function custom_action_user_login($account) {
+  $action = \Drupal::entityTypeManager()
+  ->getStorage('action')
+  ->load('config_redirect_user');    // custom action
+	if ($action) {
+	  $action->execute([$entity]);
+	}
+}
