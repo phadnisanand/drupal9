@@ -31,7 +31,13 @@ https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21theme.ap
 https://opensenselabs.com/blog/tech/how-use-ajax-api-drupal-8
 https://mycode.blog/lakshmi/implement-ajax-callback-function-drupal-89
 https://www.drupal.org/docs/drupal-apis/javascript-api/ajax-forms
+----------------------------------------------------------
 
+https://www.lullabot.com/articles/understanding-javascript-behaviors-in-drupal
+https://sararellano.medium.com/drupal-behaviors-7215ddba9a1e
+https://www.innoraft.com/blogs/drupal-behaviours
+Drupal.attachBehaviors()
+https://drupalwebacademy.com/drupal-behaviors
 
 
 https://gorannikolovski.com/blog/how-to-create-custom-autocomplete-field-and-populate-multiple-fields-with-ajax
