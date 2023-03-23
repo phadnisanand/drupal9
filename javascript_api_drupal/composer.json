@@ -77,7 +77,7 @@
             ],
             "libraries/{$name}": [
                 "type:drupal-library",
-								"type:npm-asset",
+		"type:npm-asset",
                 "type:bower-asset"
             ],
             "modules/contrib/{$name}": [
