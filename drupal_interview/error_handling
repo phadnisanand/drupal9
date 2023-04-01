@@ -1,0 +1,32 @@
+1) debug ajax code drupal and Log in dblog an array or object
+<?php
+// Logs a notice
+\Drupal::logger('my_module')->notice($message);
+// Logs an error
+\Drupal::logger('my_module')->error($message);
+
+\Drupal::logger('module_name')->notice('<pre><code>' . print_r($array, TRUE) . '</code></pre>' );
+?>
+
+https://drupalize.me/blog/201510/how-log-messages-drupal-8
+https://stackoverflow.com/questions/1705840/how-to-log-error-message-in-drupal
+https://www.key2goal.com/article/print-array-or-object-watchdog-drupal-8  ( imp)
+https://www.drupaldump.com/logging-arrays-logger
+
+--------------------------------------------------------------------------------------------
+2) javascript error handling-
+https://javascript.info/try-catch
+https://www.javascripttutorial.net/javascript-try-catch/
+https://unbiased-coder.com/get-line-number-javascript/
+https://bytes.com/topic/javascript/answers/90742-try-catch-error-handling-display-line-number
+https://github.com/paulbartrum/jurassic/issues/78
+
+try {
+
+//my code
+
+} catch (e) {
+console.log("Error name: " + e.name + ". Error description: " + e.description
++ ". Error number: " + e.number + ". Error message: " + e.message  + 'line' + e.stack); 
+}
+
