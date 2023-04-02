@@ -18,3 +18,7 @@ https://www.drupal.org/project/devel
 https://www.drupal.org/docs/theming-drupal/twig-in-drupal/debugging-twig-templates
 https://www.drupal.org/project/twig_debugger
 https://www.specbee.com/blogs/php-debugging-how-debug-your-php-code-drupal-debugging-techniques-included
+
+
+Print array in file drupal
+file_put_contents("out.txt", print_r($collection, true));
