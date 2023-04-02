@@ -6,3 +6,15 @@ I selected kint as Variables Dumper in /admin/config/development/devel
 {{ kint() }} in a twig file
 https://github.com/kint-php/kint
 https://www.altagrade.com/blog/how-install-devel-and-kint-drupal-9
+
+
+https://github.com/kint-php/kint
+https://www.webwash.net/how-to-print-variables-using-devel-and-kint-in-drupal/
+https://www.webwash.net/drupal-8-debugging-techniques/
+https://www.sjinnovation.com/drupal-9-debugging-techniques-all-you-need-know
+https://www.drupal.org/project/devel_kint_extras
+https://www.webwash.net/debug-site-performance-using-web-profiler-in-drupal-8/
+https://www.drupal.org/project/devel
+https://www.drupal.org/docs/theming-drupal/twig-in-drupal/debugging-twig-templates
+https://www.drupal.org/project/twig_debugger
+https://www.specbee.com/blogs/php-debugging-how-debug-your-php-code-drupal-debugging-techniques-included
