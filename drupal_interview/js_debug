@@ -1,0 +1,14 @@
+You can add debugger; anywhere in your JS code to set a breakpoint manually. It will pause execution and allow you to resume/inspect the code (Firebug/FF).
+
+Firebug Wiki page: http://getfirebug.com/wiki/index.php/Debugger;_keyword
+------------------------------------------------------------------
+https://stackoverflow.com/questions/7289937/how-can-you-debug-javascript-which-hangs-the-browser
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze
+1) keyword debugger;
+2) console.log();
+3) breakpoints
+----------------
+https://www.youtube.com/@sahosoftsolutions2343/playlists
+https://www.youtube.com/watch?v=VlDX-YTAzxo
+https://www.youtube.com/watch?v=ABlaMXkUwzY
+https://www.youtube.com/watch?v=Dux5y8mVIMY
