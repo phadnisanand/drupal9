@@ -1,0 +1,5 @@
+https://stackoverflow.com/questions/36426521/what-does-export-default-do-in-jsx
+https://blog.logrocket.com/modern-api-data-fetching-methods-react/
+https://www.geeksforgeeks.org/how-to-fetch-data-from-an-api-in-reactjs/
+https://betterprogramming.pub/understanding-the-difference-between-named-and-default-exports-in-react-2d253ca9fc22
+https://www.specbee.com/blogs/how-to-react-quickly-in-drupal

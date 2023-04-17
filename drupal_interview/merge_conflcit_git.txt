@@ -1,0 +1,16 @@
+1) First checkout dev branch
+2) take git pull and git fetch --all
+3) create new feature branch from dev
+git checkout -b dev_13_april_2023
+
+4) merge your feature branch to temp branch
+git merge feature/TRC-8916/PRC-eShop-Migration
+5) Resolve merge conflicts
+6) Add the conflicts files-
+git add themes/custom/eho/js/procuration.js
+7)git commit -m "Resolve conflict."
+8) Push temp branch 
+git push origin dev_13_april_2023
+11) create MR from temp branch to dev 
+check your changes and merge MR
+12) delete temp dev branch dev_13_april_2023

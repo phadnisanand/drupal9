@@ -1,0 +1,10 @@
+drupal_angular_lib:
+  version: 1.x
+  css:
+    base:
+      my-app/styles.css: {}
+  js:
+    my-app/runtime.js: {}
+    my-app/polyfills.js: {}
+    my-app/main.js: {}
+  

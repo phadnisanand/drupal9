@@ -1,0 +1,4 @@
+name: Angular Demo
+type: module
+description: 'A module for basic Angular.'
+core_version_requirement: ^8 || ^9
