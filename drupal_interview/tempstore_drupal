@@ -3,3 +3,18 @@ https://www.drupalcontractors.com/blog/2020/11/02/drupal-8-temp-store/
 https://www.drupal8.ovh/en/tutoriels/401/private-tempstore-store-data-drupal-9-session
 https://subscription.packtpub.com/book/web-development/9781800204621/6/ch06lvl1sec42/tempstore
 https://www.oreilly.com/library/view/drupal-8-module/9781789612363/916d9354-e77a-4a4c-9efa-855236c8d75e.xhtml
+https://www.drupal.org/project/session_based_temp_store
+https://www.lucius.digital/en/blog/how-set-and-get-data-drupals-tempstore-service-example-code
+http://karimboudjema.com/en/drupal/20190315/saving-temporary-values-form-private-tempstore-drupal-8
+https://davidjguru.github.io/blog/drupal-tips-changing-session-lifetime-for-users
+https://atendesigngroup.com/articles/storing-session-data-drupal-8
+https://drupal.stackexchange.com/questions/133955/how-do-i-store-the-values-submitted-in-a-form-in-the-session
+https://www.drupaldump.com/how-get-and-set-session-data-drupal-8
+https://drupal.stackexchange.com/questions/133955/how-do-i-store-the-values-submitted-in-a-form-in-the-session
+
+The PrivateTempStore differs from the SharedTempStore in that all keys are ensured to be unique for a particular user and users can never share data. If you want to be able to share data between users or use it for locking, use \Drupal\user\SharedTempStore.
+
+sessions-
+https://www.drupal.org/forum/support/module-development-and-code-questions/2020-09-14/the-best-way-to-store-anonymous
+https://www.drupal.org/node/2380327
+https://drupal.stackexchange.com/questions/278686/what-is-the-difference-between-drupalrequest-getsession-and-drupalser

@@ -1,0 +1,41 @@
+session_demo.setdata:
+  path: '/session_demo/setdata'
+  defaults:
+    _controller: 'Drupal\session_demo\Controller\SessonController::setData'
+  requirements:
+    _permission: 'access content'
+
+session_demo.getdata:
+  path: '/session_demo/getdata'
+  defaults:
+    _controller: 'Drupal\session_demo\Controller\SessonController::getData'
+  requirements:
+    _permission: 'access content'
+
+session_demo.deletedata:
+  path: '/session_demo/deletedata'
+  defaults:
+    _controller: 'Drupal\session_demo\Controller\SessonController::deleteData'
+  requirements:
+    _permission: 'access content'
+
+session_demo.setsessiondata:
+  path: '/session_demo/setsessiondata'
+  defaults:
+    _controller: 'Drupal\session_demo\Controller\SessonController::setSessionData'
+  requirements:
+    _permission: 'access content'
+
+session_demo.getsessiondata:
+  path: '/session_demo/getsessiondata'
+  defaults:
+    _controller: 'Drupal\session_demo\Controller\SessonController::getSessionData'
+  requirements:
+    _permission: 'access content'
+
+session_demo.deletesessiondata:
+  path: '/session_demo/deletesessiondata'
+  defaults:
+    _controller: 'Drupal\session_demo\Controller\SessonController::deleteSessionData'
+  requirements:
+    _permission: 'access content'
