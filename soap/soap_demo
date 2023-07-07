@@ -1,0 +1,32 @@
+<?php
+
+error_reporting(E_ALL);
+error_reporting(-1);
+ini_set('error_reporting', E_ALL);
+//Create the client object
+$soapclient = new SoapClient('https://www.dataaccess.com/webservicesserver/TextCasing.wso?WSDL');
+
+$ver =array("sAString"=>"ANAND");
+$quates=$soapclient->InvertStringCase($ver);
+
+echo $quates->InvertStringCaseResult;
+
+/*
+
+//Create the client object
+$soapclient = new SoapClient('https://www.w3schools.com/xml/tempconvert.asmx?WSDL');
+
+//Use the functions of the client, the params of the function are in
+//the associative array
+$params = array('Celsius' => '25');
+$response = $soapclient->CelsiusToFahrenheit($params);
+
+var_dump($response);
+
+// Get the Celsius degrees from the Farenheit
+$param = array('Fahrenheit' => '25');
+$response = $soapclient->FahrenheitToCelsius($param);
+
+var_dump($response);
+
+*/
