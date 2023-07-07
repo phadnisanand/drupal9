@@ -12,3 +12,8 @@ https://www.drupal.org/node/1101362
 https://stackoverflow.com/questions/9255274/making-a-soap-request-in-drupal
 
 Drupal doesnt have any specific soap functionality - you can use the built in PHP client. There should be a WSDL file you can use to generate your soap client. Something like this:
+
+Soap ui extensions-
+
+Wizdler
+https://chrome.google.com/webstore/detail/wizdler/oebpmncolmhiapingjaagmapififiakb
