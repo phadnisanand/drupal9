@@ -1,0 +1,97 @@
+<?php
+
+function custom_views_data() {
+// Define the return array.
+  $data = [];
+
+  // The outermost keys of $data are Views table names, which should usually
+  // be the same as the hook_schema() table names.
+  $data['example_table'] = [];
+
+  // The value corresponding to key 'table' gives properties of the table
+  // itself.
+  $data['example_table']['table'] = [];
+
+  // Within 'table', the value of 'group' (translated string) is used as a
+  // prefix in Views UI for this table's fields, filters, etc. When adding
+  // a field, filter, etc. you can also filter by the group.
+  $data['example_table']['table']['group'] = t('Example table');
+
+  // Within 'table', the value of 'provider' is the module that provides schema
+  // or the entity type that causes the table to exist. Setting this ensures
+  // that views have the correct dependencies. This is automatically set to the
+  // module that implements hook_views_data().
+  $data['example_table']['table']['provider'] = 'custom';
+
+  // Some tables are "base" tables, meaning that they can be the base tables
+  // for views. Non-base tables can only be brought in via relationships in
+  // views based on other tables. To define a table to be a base table, add
+  // key 'base' to the 'table' array:
+  $data['example_table']['table']['base'] = [
+    // Identifier (primary) field in this table for Views.
+    'field' => 'nid',
+    // Label in the UI.
+    'title' => t('Example table'),
+    // Longer description in the UI. Required.
+    'help' => t('Example table contains example content and can be related to nodes.'),
+    'weight' => -10,
+  ];
+
+  
+  $data['example_table']['table']['join'] = array(
+    // Index this array by the table name to which this table refers.
+    // 'left_field' is the primary key in the referenced table.
+    // 'field' is the foreign key in this table.
+    'node_field_data' => array(
+      'left_field' => 'nid',
+      'field' => 'nid',
+    ),
+  );
+
+    $data['example_table']['nid'] = [
+    'title' => t('Example content'),
+    'help' => t('Relate example content to the node content'),
+    // Define a relationship to the node_field_data table, so views whose
+    // base table is example_table can add a relationship to nodes. To make a
+    // relationship in the other direction, you can:
+    // - Use hook_views_data_alter() -- see the function body example on that
+    //   hook for details.
+    // - Use the implicit join method described above.
+    'relationship' => [
+      // Views name of the table to join to for the relationship.
+      'base' => 'node_field_data',
+      // Database field name in the other table to join on.
+      'base field' => 'nid',
+      // ID of relationship handler plugin to use.
+      'id' => 'standard',
+      // Default label for relationship in the UI.
+      'label' => t('Example node'),
+      'handler' => 'views_handler_relationship',
+      'label' => t('custom table relationship'),
+      'title' => t('custom table relationship'),
+    ],
+  ];
+
+  // Numeric field, exposed as a field, sort, filter, and argument.
+  $data['example_table']['price'] = [
+    'title' => t('Price'),
+    'help' => t('price field.'),
+    'field' => [
+      // ID of field handler plugin to use.
+      'id' => 'numeric',
+    ],
+    'sort' => [
+      // ID of sort handler plugin to use.
+      'id' => 'standard',
+    ],
+    'filter' => [
+      // ID of filter handler plugin to use.
+      'id' => 'numeric',
+    ],
+    'argument' => [
+      // ID of argument handler plugin to use.
+      'id' => 'numeric',
+    ],
+  ];
+  return $data;
+}
