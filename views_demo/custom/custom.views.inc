@@ -35,3 +35,72 @@ function custom_views_data_alter(array &$data) {
     }
 }
 
+
+function custom_views_pre_execute(ViewExecutable $view) {
+  //print_r($view->query->query()->__toString()); die();
+}
+
+
+/**
+ * Implements hook_views_query_alter().
+ */
+function custom_views_query_alter(ViewExecutable $view, QueryPluginBase $query) {
+
+  // Only for my_view view.
+  if ($view->id() == 'product_listing') {
+    // Example
+
+   // create subquery using database api
+   /* $sub_query = \Drupal::database()->select('custom_table', 'n');
+    $sub_query->addField('n', 'nid'); 
+    $sub_query->groupBy("n.nid");*/
+
+    $sub_query = \Drupal::database()->select('custom_table', 'n');
+    $sub_query->addField('n', 'nid');
+/*
+    $join_definition = [
+      'table formula' => $sub_query,
+      'field' => 'nid',
+      'left_table' => 'node_field_data',
+      'left_field' => 'nid',
+      'adjust' => TRUE,
+    ];*/
+
+    $configuration = [
+      'type'       => 'LEFT',
+      'table'      => 'custom_table',
+      'field'      => 'nid',
+      'left_table' => 'custom_table ',
+      'left_field' => 'nid',
+      'operator'   => '=',
+    ];
+
+/*
+  $join = Drupal::service('plugin.manager.views.join')->createInstance('standard', $join_definition);
+$query->addRelationship('custom_table', $join, 'node_field_data');
+*/
+
+ $join_obj = \Drupal\views\Views::pluginManager('join')
+      ->createInstance('standard', $configuration);
+  $rel = $query->addRelationship('nid', $join_obj, 'node_field_data');
+  $query->addTable('custom_table', $rel, $join_obj, 'nid');
+
+
+  }
+}
+
+/*
+function custom_views_query_alter(ViewExecutable &$view, QueryPluginBase &$query) {
+  if ($view->id() == 'product_listing') {
+    foreach ($query->where as &$condition_group) {
+      foreach ($condition_group['conditions'] as &$condition) {
+        $condition = array(
+          'field' => 'node_field_data.nid',
+          'value' => 1,
+          'operator' => '=',
+        );
+      }
+    }
+  }
+}
+*/

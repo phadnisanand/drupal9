@@ -1,7 +1,5 @@
 <?php
 
-// https://api.drupal.org/api/drupal/core%21modules%21views%21views.api.php/function/hook_views_data/9.4.x
-
 function custom_views_data() {
 // Define the return array.
   $data = [];
