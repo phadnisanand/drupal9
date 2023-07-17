@@ -44,4 +44,17 @@ https://drupal.stackexchange.com/questions/201776/how-do-i-print-the-sql-query-o
 https://www.codimth.com/blog/web/drupal/how-show-sql-query-entity-query-drupal-8
 
 
+hook_views_query_alter
+https://gist.github.com/brooke-heaton/58b51ffd07b6e699e945cfdc3bd25111
+https://www.w3cschool.cn/doc_drupal_8/drupal_8-core-modules-views-views-api-php-function-hook_views_query_alter-8-1-x.html
+https://parasolx.net/blogs/snippet-pass-multiple-filter-values-drupal-views
+
+https://api.drupal.org/api/drupal/core%21modules%21views%21views.api.php/function/hook_views_query_alter/10
+https://alter373.rssing.com/chan-19100128/all_p1.html
+https://drupal.stackexchange.com/questions/288422/join-subquery-as-right-table-in-views
+https://drupal.stackexchange.com/questions/288422/join-subquery-as-right-table-in-views
+https://gist.github.com/brooke-heaton/58b51ffd07b6e699e945cfdc3bd25111
+https://drupal.stackexchange.com/questions/288422/join-subquery-as-right-table-in-views
+
+
 
