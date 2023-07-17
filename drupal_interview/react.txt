@@ -3,3 +3,10 @@ https://blog.logrocket.com/modern-api-data-fetching-methods-react/
 https://www.geeksforgeeks.org/how-to-fetch-data-from-an-api-in-reactjs/
 https://betterprogramming.pub/understanding-the-difference-between-named-and-default-exports-in-react-2d253ca9fc22
 https://www.specbee.com/blogs/how-to-react-quickly-in-drupal
+
+
+https://github.com/DrupalizeMe/react-and-drupal-examples
+https://drupalize.me/tutorial/introduction-react-and-drupal
+https://drupalize.me/course/get-started-using-react-and-drupal-together
+https://medium.com/@purushotamrai/getting-started-with-reactjs-drupal-fully-decoupled-feae28a41a5d
+https://www.youtube.com/watch?v=5Tj-3o6aGws
