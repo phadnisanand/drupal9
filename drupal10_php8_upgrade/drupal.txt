@@ -1,0 +1,40 @@
+https://www.drupal.org/docs/develop/decoupled-drupal/
+https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module
+
+Rest API without-caching-
+https://drupal.stackexchange.com/questions/182863/rest-get-without-caching
+https://api.drupal.org/api/drupal/core%21modules%21rest%21src%21ModifiedResourceResponse.php/class/ModifiedResourceResponse/8.4.x
+
+<?php
+
+// ...
+
+use Drupal\rest\ModifiedResourceResponse;
+
+// ...
+
+class ExampleHello extends ResourceBase {
+
+    public function get() {
+        // ...
+        return new ModifiedResourceResponse($response, 200);
+    }
+
+}
+---------------------------------------------------------------------------------------
+auto login drupal
+https://www.drupal8.ovh/en/tutoriels/76/login-programmatically-as-a-user
+---------------------------------------------------------------------------------------
+MOdify field already exists-
+https://www.hook42.com/blog/ride-danger-zone-how-update-drupal-8-field-settings-without-losing-any-data
+https://www.zyxware.com/article/how-to-modify-a-field-with-existing-data
+https://borutpiletic.com/article/drupal-update-change-field-length
+---------------------------------------------------------------------------------------
+important site
+https://php.watch/versions/8.0/deprecate-required-param-after-optional
+https://php.watch/versions/8.1
+vendor\bin\phpcs -p modules\custom --standard=PHPCompatibility --extensions=php,module,inc,install,test,profile,theme --runtime-set testVersion 8.1
+---------------------------------------------------------------------------------------
+decoupled drupal
+https://www.drupal.org/docs/develop/decoupled-drupal/
+https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module

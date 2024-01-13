@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+ 
+    <script>
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                alert("Using text()- " + $("#demo").text());
+            });
+            $("#button2").click(function () {
+                prompt("Using html()- " + $("#demo").html());
+            });
+        });
+    </script>
+</head>
+ 
+<body>
+    <p id="demo">By clicking on the below buttons,
+        <b>difference</b> between
+        <i>text</i> and <i>html</i> in
+        <b>jQuery</b> is shown.
+    </p>
+ 
+    <button id="button1">Text</button>
+    <button id="button2">HTML</button>
+</body>
+ 
+</html>

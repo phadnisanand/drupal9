@@ -1,0 +1,25 @@
+https://packagist.org/packages/palantirnet/drupal-rector
+https://packagist.org/packages/phpstan/phpdoc-parser
+https://getrector.com/documentation
+https://github.com/rectorphp/rector
+https://www.drupal.org/docs/upgrading-drupal/prepare-major-upgrade/deprecation-checking-and-correction-tools-to-prepare-for-a-new-drupal-major-version
+https://github.com/phpstan
+https://phpstan.org/
+https://phpstan-drupal.mglaman.dev/
+https://github.com/mglaman/phpstan-drupal
+https://www.youtube.com/watch?v=ywmiJYmjY_s
+
+vendor\bin\rector process modules\custom --dry-run
+composer require --dev palantirnet/drupal-rector
+composer require phpstan/phpdoc-parser
+
+composer require --dev palantirnet/drupal-rector
+https://drupalize.me/blog/jump-start-your-drupal-9-code-updates-drupal-check-and-drupal-rector
+https://www.easternstandard.com/blog/drupal-9-to-drupal-10-upgrades-complete-technical-guide-and-upgrade-steps/
+https://packagist.org/packages/webflo/drupal-finder
+https://www.palantir.net/blog/jumpstart-your-drupal-9-upgrade-drupal-rector
+https://github.com/palantirnet/drupal-rector
+https://github.com/phpstan/phpdoc-parser	
+https://github.com/mglaman/phpstan-drupal
+
+https://www.drupal.org/docs/develop/development-tools/phpstan/getting-started

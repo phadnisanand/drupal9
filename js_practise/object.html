@@ -1,0 +1,58 @@
+<script>
+
+// Nested object and methods
+var operation = {
+	firstName: "Anand",
+  lastName: "Phadnis",
+  age: 50,
+  eyeColor: "blue",
+  sumThis: function(a, b) {
+			console.log(`sum is ${a + b}` );
+			console.log(`My name is ${this.firstName} ${this.lastName}` );
+	},
+	diffThis : function(a, b) {
+			console.log(`sum is ${a - b}` );
+	}
+};
+operation.sumThis(10, 40);
+operation.diffThis(30, 10);
+
+// Object create
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+
+console.log(person.firstName + ' ' +  person.lastName); 
+
+// looping object
+let txt = "";
+for (let x in person) {
+txt += person[x] + " ";
+};
+
+console.log(txt);
+
+// convert object to array
+const myArray = Object.values(person);
+console.log(myArray);
+
+// stringfy object in json 
+const myJson = JSON.stringify(person);
+console.log(myJson);
+
+
+// Object constructor
+function Person1(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+
+const myFather = new Person1("John", "Doe", 50, "blue");
+const myMother = new Person1("Sally", "Rally", 48, "green");
+console.log(myFather.firstName + ' ' + myMother.firstName)
+</script>

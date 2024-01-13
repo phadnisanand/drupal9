@@ -1,0 +1,27 @@
+<script>
+
+function foo(outer_arg) {
+ 
+    function inner(inner_arg) {
+        return outer_arg + inner_arg;
+    }
+    return inner;
+}
+let get_func_inner = foo(5);
+ 
+console.log(get_func_inner(4));
+console.log(get_func_inner(3));
+
+
+function greeting(message) {
+   return function(name){
+        return message + ' ' + name;
+   }
+}
+let sayHi = greeting('Hi');
+let sayHello = greeting('Hello');
+
+console.log(sayHi('John')); // Hi John
+console.log(sayHello('John')); // Hello John
+
+</script>

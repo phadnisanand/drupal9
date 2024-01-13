@@ -1,0 +1,26 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+function getData(ajaxurl) { 
+  return $.ajax({
+    url: ajaxurl,
+    type: 'GET',
+  });
+};
+
+
+async function fetchAjaxData() {
+  console.log( 'coming before');
+	const fetchAjaxData = await fetch('https://jsonplaceholder.typicode.com/posts');
+	var jsonData = await fetchAjaxData.json();
+	console.log(jsonData);
+	const fetchAjaxData = await getData('https://jsonplaceholder.typicode.com/posts');
+	console.log(fetchAjaxData);
+	console.log( 'coming after');
+}
+function showData2() {
+		fetchAjaxData();
+		
+}
+</script>
+
+<input type="button" value="show data" onclick= "showData2();"/>

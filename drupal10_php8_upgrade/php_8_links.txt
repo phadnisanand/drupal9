@@ -1,0 +1,30 @@
+
+https://mikemadison.net/blog/2022/8/23/testing-php-81-updates
+composer update php --with-all-dependencies
+
+https://php101.net/tutorial/change-xampp-php-version-on-windows/
+run two php version on windows local and check php deprecated error
+
+https://www.devopsschool.com/blog/how-to-downgrade-php-from-8-0-0-to-7-1-32-in-xampp-8-0-0/
+https://php101.net/tutorial/change-xampp-php-version-on-windows/
+
+https://metadrop.net/en/articles/updating-drupal-php-8
+https://www.youtube.com/watch?v=6erRbReI8_4
+
+
+https://www.drupal.org/node/2924272
+https://www.specbee.com/blogs/drupal9-and-its-compatibility-with-php-8-learn-whats-new
+
+
+vendor\bin\phpcs -p modules\custom --standard=PHPCompatibility --standard=PHPCompatibility --extensions=php,module,inc,install,test,profile,theme --runtime-set testVersion 8.1
+https://www.drupal.org/project/flysystem/issues/3296243
+https://drupalsun.com/gilzow/2022/12/21/how-migrate-your-code-php-74-81
+
+vendor\bin\phpcs -p . --standard=PHPCompatibility --runtime-set testVersion 8.1 --ignore=*\vendor\*
+
+vendor\bin\phpcs -p modules\custom --standard=PHPCompatibility --extensions=php,module,inc,install,test,profile,theme --runtime-set testVersion 8.1
+vendor\bin\phpcs -p themes --standard=PHPCompatibility --extensions=php,module,inc,install,test,profile,theme --runtime-set testVersion 8.1
+
+important site
+https://php.watch/versions/8.0/deprecate-required-param-after-optional
+https://php.watch/versions/8.1

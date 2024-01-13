@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+	
+	var newurl=  "https://mdy.api-ac.acbpost.be/gcm/V2/User?email='phadnis.anand@tcs.com'&appCode='E-Shop B2C'";
+	/*$.ajaxSetup({
+				beforeSend: function(xhr) {
+						xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+						xhr.setRequestHeader('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, DELETE, PUT');
+						xhr.setRequestHeader('Access-Control-Allow-Headers', 'x-requested-with, Content-Type, origin, authorization, accept, client-security-token');
+						xhr.withCredentials = false;
+				}
+				
+		});*/
+		
+		
+	$.ajax({
+				  url: newurl,
+					type: "GET",
+					//datatype : "application/json; odata.metadata=minimal",
+					 //sameSite: 'Lax',
+					 //secure: false,
+					// cache: false,
+					//async: false,
+					//jsonpCallback: 'jsonCallback',
+					/*  xhrFields: {
+        withCredentials: true
+    },*/
+          headers: {
+            'Access-Control-Allow-Origin': '*',
+						'Access-Control-Allow-Headers':'*',
+						'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+						"x-api-key": 'a089627f5cae49f59551ad8e490d72ad',
+						'Accept': '*',
+						 "Access-Control-Max-Age": "1000",
+						'Prefer': 'odata.include-annotations="*"',
+          },
+        success: function(data) {
+				console.log(data);
+				}
+		});
+		
+		});
+});
+</script>
+</head>
+<body>
+
+<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+
+<button>Get External Content</button>
+
+</body>
+</html>

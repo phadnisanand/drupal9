@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>jQuery.attr() Vs. jQuery.prop()</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#p1").text("Initial Value with .attr()...." + $('#txtInput').attr('value'));
+  $('#btn1').click(function() {
+    $("#p2").text($('#txtInput').attr('value') + " - With .attr()");
+    $("#p3").text($('#txtInput').prop('value') + " - With .prop()");
+  });
+});
+</script>
+</head>
+<body>
+<p id="p1"></p>
+<div>Change the input value and click the button...</div>
+<br>
+<input type="text" id="txtInput" value="First Value">
+<button id="btn1">Click Me</button>
+<p id="p2"></p>
+<p id="p3"></p>
+</body>
+</html>

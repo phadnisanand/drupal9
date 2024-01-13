@@ -1,0 +1,17 @@
+<script>
+
+function increment() {
+	let counter = 0;
+  return function () {counter += 1; return counter}
+}
+/*
+const increment = (function () {
+  let counter = 0;
+  return function () {counter += 1; return counter}
+})();
+*/
+var abc = increment();
+console.log(abc());
+console.log(abc());
+console.log(abc());
+</script>
