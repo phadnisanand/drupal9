@@ -30,3 +30,15 @@ Drupal 10 upgrade-
 
 https://www.youtube.com/watch?v=qLwKydxZMmI&t=579s
 https://www.youtube.com/watch?v=v7aZsroqz5w&list=PLVeQQ4Ka_ZvtOqI-Wsw4CCljBV2fyGaGv&index=2
+
+-------------------------------------------------------------------------------------------------------------
+
+ModifiedResourceResponse
+Use Drupal\rest\ModifiedResourceResponse instead of ResourceResponse, then it won't be cached.
+
+https://copyprogramming.com/howto/drupal-8-get-current-user-programmatically
+https://dev.to/mahmoudsayed96/drupal-api-resources-for-custom-login-2da8
+https://www.digitalnadeem.com/drupal/drupal-8-rest-api-tutorial-and-creating-custom-rest-api/
+https://blog.dcycle.com/blog/2018-01-24/caching-drupal-8-rest-resource/
+https://opensenselabs.com/blog/tech/custom-rest-resource-drupal-8
+https://drupal.stackexchange.com/questions/307592/rest-api-calls-are-always-cached
