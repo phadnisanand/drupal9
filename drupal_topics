@@ -1,0 +1,27 @@
+Alter drupal alias programmatically-
+
+https://www.berramou.com/blog/drupal-8-how-alter-path-alias-depending-node-property-field
+https://www.chapterthree.com/blog/how-alter-node-url-alias-based-taxonomy-term-drupal-8
+https://drupal.stackexchange.com/questions/260026/alter-url-aliases-programmatically
+-------------------------------------------------------------------------------------------------------------
+Change field type with existing data on drupal 8-
+
+https://blog.42mate.com/change-field-type-with-existing-data-on-drupal-8/
+https://www.zyxware.com/article/how-to-modify-a-field-with-existing-data
+https://www.drupal.org/docs/drupal-apis/update-api/updating-entities-and-fields-in-drupal-8
+http://www.jpstacey.info/blog/2017-07-21/altering-length-drupal-8-text-field-contains-data.html
+https://www.liquidcms.ca/post/change-field-type-field-existing-data
+https://www.hook42.com/blog/ride-danger-zone-how-update-drupal-8-field-settings-without-losing-any-data
+https://www.metaltoad.com/blog/extending-drupal-8-fields-contain-data
+drush cset command to update configuration
+-------------------------------------------------------------------------------------------------------------
+Path Processor service drupal->
+
+https://www.hashbangcode.com/article/drupal-10-creating-custom-paths-path-processors
+https://www.hashbangcode.com/article/drupal-9-altering-routes-route-subscriber-service
+https://drupal.stackexchange.com/questions/305651/inbound-path-processor-is-not-processing
+https://copyprogramming.com/howto/drupal-8-redirect-part-of-path-code-example
+-------------------------------------------------------------------------------------------------------------
+
+Override core service drupal-
+https://www.bounteous.com/insights/2017/04/19/drupal-how-override-core-drupal-8-service
