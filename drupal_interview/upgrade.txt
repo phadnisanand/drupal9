@@ -1,0 +1,59 @@
+Q. 1 -> what is difference between drupal 9 and drupal 10 ?
+https://www.skynettechnologies.com/blog/drupal-9-vs-drupal-10
+
+ans-
+ Drupal 10 requires at least PHP 8.1. 
+1) Symfony version -> 4 to 6.2 Drupal 10 is built on Symfony 6
+2) Ckeditor -> 4 to 5
+3) New Front end theme -> Olivero replaced bartik
+4) Claro is default admin theme
+seven removed from core
+ starterkit_theme provided to simplify theme developement.
+ Classy Theme is removed as of Drupal 10. The functionality provided by Classy is now available via the Starterkit theme
+
+Streamlined content creation (inline editing), collaboration features
+Modern JavaScript components replacing some jQuery usage
+Theme Starterkit tools for easier theme creation
+Enhanced security features
+Requires updates for deprecated features
+Improved performance with modernization
+--------------------------------------------------------------------------------------------------------------------
+Current drupal version -> 10.3.1
+--------------------------------------------------------------------------------------------------------------------
+Upgrade path from Drupal 9 to 10-
+Drupal 10 requires at least PHP 8.1
+----
+Verify PHP version already updated to PHP 8.1 
+Update to Drupal 9.4.x or 9.5.x (if not already on that version).
+if you are using Bartik as the default theme and CKEditor, then switch to Olivero and CKEditor 5 before upgrading to Drupal 10.
+--------------------
+
+Install modules. 
+https://www.drupal.org/project/upgrade_status
+https://github.com/palantirnet/drupal-rector
+https://github.com/mglaman/drupal-check
+https://www.drupal.org/project/coder
+As per recommedation by Upgrade Status module-
+Update all contributed modules to latest version possible
+Update composer related depedencies 
+Before update to Drupal 10 make sure that drupal core is on 9.4 or 9.5
+Run report on custom modules to find out deprecated code
+Upgrade site to drupal 10 and update database
+use rector to automatically fix some of them.
+Fix remanining code in custom modules and themes manually.
+Test the end to end functionality of site
+
+https://www.drupal.org/docs/core-modules-and-themes/deprecated-and-obsolete
+--------------------------------------------------------------------------------------------------------------------
+composer update drupal/core  --with-all-dependencies
+
+update steps -
+composer require drupal/core-recommended:^10 -W
+composer update
+drush updb
+
+https://www.drupal.org/docs/upgrading-drupal/upgrading-from-drupal-8-or-later/how-to-upgrade-from-drupal-9-to-drupal-10
+--------------------------------------------------------------------------------------------------------------------
+deprecated module -> Quick Edit , RDF, HAL, Color, CKEditor REPLCED BY CKEditor5, Aggregator
+Deprecated Themes -> Bartik , Classy ,Seven, Stable
+--------------------------------------------------------------------------------------------------------------------

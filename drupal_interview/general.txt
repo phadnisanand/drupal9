@@ -1,0 +1,100 @@
+How to attach library css, js in drupal ?
+first create lirararies.yml file
+then 
+1) add globally to .info.yml file libraries section
+2) hook_page_attachments_alter() to attach libraries  $page['#attached']['library']
+3) hook_preproces_page() $page['#attached']['library']
+4) in twig file {{ attach_library('library_name') }}
+----------------------------------------------------------------------------------------------
+what are menu links in drupal ?
+1) Menu links  > node.links.menu.yml
+2) Action links -> node.links.action.yml
+3) Local tasks -> node.links.task.yml tabs
+4) Contexual links-> node.links.contextual.yml
+----------------------------------------------------------------------------------------------
+custom rest web service in drupal ?
+https://www.valuebound.com/resources/blog/creating-custom-restful-web-service-drupal-9
+create module
+Drupal\sample_rest_resource\Plugin\rest\resource;
+Rest and Rest UI module
+src\Plugin\rest\resource\SampleGetRestResource
+
+/*
+ * @RestResource(
+ *   id = "custom_get_rest_resource",
+ *   label = @Translation("Custom Get Rest Resource"),
+ *   uri_paths = {
+ *     "canonical" = "/vb-rest"
+ *   }
+ * )
+ */
+ @RestResource is a function, through which know, it’s a kind of Rest Resource
+
+We will need to install these core modules HTTP Basic Authentication, REST Web Services, and serialization module.
+Then install Contributed module called REST UI,
+
+JSON API
+Rest API
+Cors policy
+Seckit module
+https://medium.com/@vishwa.chikate/drupal-8-9-custom-authentication-provider-for-restful-apis-e3ded58d7e2a
+or custom authentication_provider 
+ --------------------------------------------------------------------------------------------------------
+ Services and dependency injection 
+ Dependency injection-
+ https://www.drupal.org/docs/drupal-apis/services-and-dependency-injection/services-and-dependency-injection-in-drupal
+ https://www.drupal.org/docs/drupal-apis/services-and-dependency-injection/structure-of-a-service-file
+ 
+ What is services 
+	 Predefined services
+	 Custom Services
+ use Symfony\Component\DependencyInjection\ContainerInterface
+ __construct()
+  public static function create(ContainerInterface $container)
+--------------------------------------------------------------------------------------------------------
+plugin
+annotations, 
+plugin types
+
+--------------------------------------------------------------------------------------------------------
+Events / hooks
+
+--------------------------------------------------------------------------------------------------------
+Entities
+1. Config  -> blocks , menus, 
+2. Content -> node, user, media, 
+differnce between custom and config entity
+--------------------------------------------------------------------------------------------------------
+Caching drupal
+https://materialplus.srijan.net/resources/blog/the-fundamentals-of-caching-in-drupal-8
+https://www.drupal.org/docs/develop/development-tools/disabling-and-debugging-caching
+--------------------------------------------------------------------------------------------------------
+Imrrove performance of site
+Testing multi user access same time.
+--------------------------------------------------------------------------------------------------------
+
+How to create own module
+
+How to create own theme
+------------------------------------------------------------------------------------------------------------------------------------
+Required files to create module  -> Each module is required to have a MODULE.info.yml 
+"info yaml file" is an essential part of a Drupal 8+ module, theme, or install profile to store metadata about the project. 
+it is important to set the 'type' key in the file
+type: module
+type: theme
+type: profile
+theme and module strucutre
+what are things inherited from base theme to child theme ?
+
+------------------------------------------------------------------------------------------------------------------------------------
+twig files how to create from module? 
+
+drush commands
+git comnands
+------------------------------------------------------------------------------------------------------------------------------------
+developer module on in drupal ?
+https://drupal.stackexchange.com/questions/127182/how-do-i-enable-developer-debugging-mode#:~:text=An%20easy%20option%2C%20if%20you,use%20drupal%20site%3Amode%20prod%20.&text=and%20set%20%22Error%20Messages%20to%20Display%22%20to%20an%20appropriate%20level.
+$config['system.logging']['error_level'] = 'verbose'; ->  sites/default/settings.php
+
+------------------------------------------------------------------------------------------------------------------------------------
+Drupal code standards
