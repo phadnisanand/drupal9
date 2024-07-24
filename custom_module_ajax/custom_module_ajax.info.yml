@@ -1,0 +1,6 @@
+name: Custom Module Ajax
+description: Custom ajax module
+type: module
+core_version_requirement: ^9.5 || ^10
+version: '2.0.4'
+datestamp: 1709073207
