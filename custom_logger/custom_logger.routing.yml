@@ -1,0 +1,13 @@
+custom_logger.custom_log:
+  path: '/custom_logger'
+  defaults:
+    _controller: '\Drupal\custom_logger\Controller\CustomLoggerController::printLog'
+  requirements:
+    _permission: 'access content'
+ 
+custom_logger.custom_webservice:
+  path: '/custom_api'
+  defaults:
+    _controller: '\Drupal\custom_logger\Controller\CustomLoggerController::customApi'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,3 @@
+composer require monolog/monolog
+https://serverfault.com/questions/772842/uncaught-error-class-monolog-logger-not-found
+https://packagist.org/packages/monolog/monolog

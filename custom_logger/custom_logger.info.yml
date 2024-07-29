@@ -1,0 +1,4 @@
+name: custom_logger
+type: module
+description: Custom logger.
+core_version_requirement: ^9.3 || ^10

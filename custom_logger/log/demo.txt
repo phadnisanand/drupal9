@@ -1,0 +1,4 @@
+[2024-07-29T11:02:28.527683+02:00] CustomLog.INFO: Custom logger:  [] []
+[2024-07-29T11:02:28.529638+02:00] CustomLog.INFO: |NAME:  ["Anand Phadnis"] []
+[2024-07-29T11:02:28.529696+02:00] CustomLog.INFO: |AGE :  [38] []
+[2024-07-29T11:02:28.529729+02:00] CustomLog.INFO: |Salary:  [100000] []
