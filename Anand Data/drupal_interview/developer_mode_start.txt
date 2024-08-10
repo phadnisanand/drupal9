@@ -1,0 +1,60 @@
+I will rather suggest the following steps.
+
+Enable Twig debug and disable the cache for development purpose
+
+Copy the sites/example.settings.local.php file to sites/default/settings.local.php
+
+Un-comment the $settings['cache']['bins']['render'] = 'cache.backend.null'; line in the settings.local.php file
+
+On the site/default/settings.php file, un-comment the following lines
+
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
+}
+Open settings.local.php and make sure development.services.yml is enabled.
+
+$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
+
+Add the following lines to the sites/development.services.yml file
+
+parameters:
+  http.response.debug_cacheability_headers: true
+  twig.config:
+    debug: true
+    auto-reload: true
+    cache: false
+services:
+  cache.backend.null:
+    class: Drupal\Core\Cache\NullBackendFactory
+when all steps completed change directory to root dir and rebuild cache ```
+
+Run drush cr
+You should now see the debug output. Don't forget to undo the changes before deploying to production.
+
+Adding $config['system.logging']['error_level'] = 'verbose'; to the sites/default/settings.php should log the error.
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
+
+https://drupal.stackexchange.com/questions/127182/how-do-i-enable-developer-debugging-mode#:~:text=An%20easy%20option%2C%20if%20you,use%20drupal%20site%3Amode%20prod%20.&text=and%20set%20%22Error%20Messages%20to%20Display%22%20to%20an%20appropriate%20level.
+
+https://www.drupal.org/docs/develop/development-tools/disabling-and-debugging-caching
+
+dblog module
+js / css aggregation
+devel module
+
+Within Drupal 10.1.0 and later, there is a new "Development settings" page at /admin/config/development/settings that contains Twig development settings, as well as the ability to disable various caches.
+----------------------------------------------------------------------------------------------------------------------------------------------
+\Drupal::logger('GCM_data_code')->error('Fault code - ' . print_r($result_message, TRUE));
+
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+if ($log_path != '' && $log_file_name != '') {
+		$log = new Logger('OrderDeletionLog');
+		$log->pushHandler(new StreamHandler($log_path . $log_file_name));
+		$separator = "|";
+		$log->info($separator . "Order id : ", array_values($finalOrders));
+	}
