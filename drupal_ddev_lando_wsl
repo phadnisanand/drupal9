@@ -1,0 +1,51 @@
+WSL- lando + pantheon
+https://docs.docker.com/desktop/setup/install/windows-install/
+https://www.specbee.com/blogs/installing-drupal-9-on-windows-subsystem-for-linux-from-scratch
+http://localhost:8983/solr/#/new_core/query?q=*:*&q.op=OR&indent=true
+http://localhost:8080/drupal-10.3.10/admin/content
+https://docs.lando.dev/plugins/pantheon/v/v1.8.0/config.html
+https://medium.com/@pankajsachdeva_76544/local-development-setup-with-lando-using-pantheon-recipe-221db23ed658
+Panthon token- njLR6MrzV3f8CkMkzsN4EJ21hoV8baBElmwXIsEuz5yVB
+\\wsl$  -> network tab  -> work code inside it.
+http://localhost:57870/admin/content
+
+
+git config --global user.email "phadnisanandhyd@gmail.com"
+git config --global user.name "Anand Phadnis"
+
+lando init  -> lando support-
+? From where should we get your app's codebase?
+  acquia
+  current working directory
+  github
+  lagoon
+  pantheon
+  platformsh
+❯ remote git repo or archive
+---------------------------------------------------------------------------------------------------------------------------
+
+WSL- DDEV + pantheon
+https://www.drupal.org/docs/develop/local-server-setup/windows-development-environment/installing-drupal-with-ddev-in-wsl2-on-windows/installing-docker-ddev-drupal-in-wsl2
+https://ddev.com/get-started/
+https://ddev.readthedocs.io/en/stable/users/providers/pantheon/
+https://docs.localgovdrupal.org/devs/getting-started/working-with-ddev.html#installing-localgov-drupal-locally-with-composer-and-ddev
+https://www.youtube.com/watch?v=uochIVLwBL4
+https://www.youtube.com/watch?v=t-0aeoh3H5Y
+https://ddev.readthedocs.io/en/stable/users/topics/
+https://docs.pantheon.io/terminus
+https://github.com/ddev/ddev
+https://ddev.readthedocs.io/en/stable/users/install/ddev-installation/#linux
+https://docs.pantheon.io/terminus/commands/backup-create
+
+DDev support providers-
+----                 -------------         ------ ----
+------        08-01-2025     10:27           4460 upsun.yaml
+------        08-01-2025     10:35           5025 pantheon.yaml.example
+------        08-01-2025     10:27           2500 rsync.yaml.example
+------        08-01-2025     10:27           1436 git.yaml.example
+------        08-01-2025     10:27           2595 lagoon.yaml
+------        08-01-2025     10:34           5023 pantheon.yaml
+------        08-01-2025     10:27           3820 acquia.yaml
+------        08-01-2025     10:27           6899 platform.yaml
+------        08-01-2025     10:27           6423 README.txt
+------        08-01-2025     10:27           1162 localfile.yaml.example
