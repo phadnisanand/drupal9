@@ -1,0 +1,52 @@
+Drupal.org profile-
+https://www.thedroptimes.com/people/39189/serhii-klietsov
+https://www.drupal.org/u/goodboy
+
+-----------------------------------------------------------------------------------
+https://github.com/drupal/recommended-project
+composer create-project drupal/recommended-project myproject
+composer create-project drupal/recommended-project:8.9.1 myproject
+
+composer show drupal/recommended-project --all
+https://packagist.org/packages/drupal/recommended-project
+------------------------------------------------------------------------------------------------------------
+unable to get local issuer certificate
+
+https://stackoverflow.com/questions/66276070/composer-curl-error-60-ssl-certificate-problem-unable-to-get-local-issuer-cert
+composer config -g -- disable-tls false
+
+I also faced this issue, and my system is behind corporate proxy/ Antivirus. I had tried below methods.
+
+Downloaded latest cacert.pem from https://curl.se/docs/caextract.html.
+
+Mentioned the path in respective php.ini file.
+
+ [curl]
+ curl.cainfo = "PATH/TO/cacert.pem"
+ openssl.cafile = "PATH/TO/cacert.pem"
+
+ [openssl]
+ openssl.capath = "PATH/TO/cacert.pem"
+Updated composer global config to ignore certificate and TLS/SSL.
+
+ composer config --global disable-tls true
+ composer config --global secure-http false
+Updated cafile and capath configuration of composer.
+
+ composer config --global cafile PATH/TO/cacert.pem
+ composer config --global capath PATH/TO/DIRECTORY/WHERE cacert.pem is placed
+Saving the cacert.pem file as curl-ca-bundle.crt under C:\Windows\System32 (I am on Windows)
+
+Restarting the OS as last resort.
+----------------------------------------------------------------------------------------------------------------------------
+curl error 60 while downloading https://packages.drupal.org/8/packages.json: SSL certificate problem: unable to get local issuer certificate
+https://curl.se/docs/caextract.html
+https://stackoverflow.com/questions/66276070/composer-curl-error-60-ssl-certificate-problem-unable-to-get-local-issuer-cert
+https://stackoverflow.com/questions/19164503/curl-ssl-unable-to-get-local-issuer-certificate-on-xampp
+https://confluence.atlassian.com/bitbucketserverkb/ssl-certificate-problem-unable-to-get-local-issuer-certificate-816521128.html
+https://learn.microsoft.com/en-us/skype-sdk/sdn/articles/installing-the-trusted-root-certificate
+https://www.drupal.org/forum/support/upgrading-drupal/2021-10-28/ssl-self-signed-certificate-on-local-error
+https://blog.hubspot.com/website/fix-ssl-certificate-error
+https://medium.com/@narendravaghela/how-to-fix-curl-error-60-ssl-certificate-problem-80e7dafafa57
+https://ostraining.com/blog/drupal/drupal-xampp-curl-error-60/
+https://www.drupal.org/project/drupal/issues/2654474
