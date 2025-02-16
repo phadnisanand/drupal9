@@ -46,6 +46,8 @@ https://stackoverflow.com/questions/19164503/curl-ssl-unable-to-get-local-issuer
 https://confluence.atlassian.com/bitbucketserverkb/ssl-certificate-problem-unable-to-get-local-issuer-certificate-816521128.html
 https://learn.microsoft.com/en-us/skype-sdk/sdn/articles/installing-the-trusted-root-certificate
 https://www.drupal.org/forum/support/upgrading-drupal/2021-10-28/ssl-self-signed-certificate-on-local-error
+
+https://gist.github.com/Lukas238/a7fe617275992b781f95415f1828b83a
 https://blog.hubspot.com/website/fix-ssl-certificate-error
 https://medium.com/@narendravaghela/how-to-fix-curl-error-60-ssl-certificate-problem-80e7dafafa57
 https://ostraining.com/blog/drupal/drupal-xampp-curl-error-60/
