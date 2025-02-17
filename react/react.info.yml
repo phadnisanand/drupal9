@@ -1,0 +1,5 @@
+name: React Module
+type: module
+description: 'First custom drupal module'
+package: custom
+core_version_requirement: ^9 || ^10
