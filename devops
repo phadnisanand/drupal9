@@ -1,0 +1,28 @@
+travis ci , github and pantheon integration
+
+https://www.lullabot.com/articles/continuous-integration-in-drupal-8-with-travis-ci
+https://www.gizra.com/blog/from-ci-to-cd/
+https://github.com/Gizra/drupal-starter#automatic-deployment-to-pantheon
+https://steveworley.github.io/2016/11/17/drupal-8-modules-travis.html
+https://github.com/phadnisanand/drupal-starter#deploy-to-pantheon
+
+https://github.com/acquia/cloud-hooks
+https://docs.acquia.com/resources/archives/blt/tech-architect/deploy
+https://docs.acquia.com/resources/archives/blt/tech-architect/ci
+https://www.specbee.com/blogs/continuous-integration-and-testing-in-drupal
+https://docs.pantheon.io/machine-tokens
+git clone ssh://codeserver.dev.f9006632-61ea-4266-8c4c-598eb325ef51@codeserver.dev.f9006632-61ea-4266-8c4c-598eb325ef51.drush.in:2222/~/repository.git -b master drupaldemoanand
+
+c_skz6V8MLtUz0NwQAH7m5feAMLsZ2z6qjxlakY5baqrl
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDPE9jDDMJTMWJYWVPxFratmIrsZOYcUJcRqACV7gJ/7e+5YRyi9tAEv9hhL0yCVXcT5N3J/6MKM5glSthu/nno1+akCQ3F1H8utYGhyWGJf2dl242pRwT7SSZNdsC1gJSU4wEn4hfLIJaNIfEhfBLwfY6Cn0WSxzN8OEMxreHkObumKfazAeAMC6RylPADs5iqUWeJKKUtZ1/p0XPYPOOBV/ZrDYJz4ZbCCIgWi9TRRR33Dn8W99AzGGMnCV3ILmW82cONMRUF9Vw8KwxOb2RUpX6DwjkN33GZoeihTXZE4PiiTqJ27DJuU9s1I5MOlqDMZpFxvtNRqa7K7ny0MNKbm89AM2tnAyfwebuWuaf+4+tn4IUiJxai/b7NZD+2UiVPGke3yeKJRgQhRylyJ10WKTRcFNXGL34xoDp2W2tgADhGfe6at5kJCdfqf72bvndEyWGzVKvZnHrp9mCJx1JhVu+RY7Cf9IXl0T8ByuamqdEso01K3KwZWut56KCEgA8= phadnisanandhyd@gmail.com
+
+https://www.youtube.com/watch?v=3_DorV51OVc
+https://www.youtube.com/watch?v=P-cuiTVXlck
+https://github.com/Lullabot/drupal9ci
+https://github.com/juampynr/drupal8-travis-ci/tree/master
+https://wadmiraal.net/lore/2018/03/12/simple-functional-testing-in-drupal-8-with-travisci/
+
+https://kevinquillen.com/deploying-drupal-8
+https://www.travis-ci.com/blog/2019-05-30-setting-up-a-ci-cd-process-on-github/
+https://www.freecodecamp.org/news/how-to-wire-travis-ci-to-do-the-heavy-lifting-in-your-workflow-72693c855696/
