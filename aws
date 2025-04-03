@@ -1,0 +1,11 @@
+
+AWS integration drupal-
+S3, Secretes manager, lamda , API gateway, SNS, SES, cron job etc
+
+https://aws.amazon.com/tutorials/deploy-drupal-with-amazon-rds/
+https://medium.com/@novosibcool/drupal-on-aws-4f89b9bdd27b
+https://aws.amazon.com/efs/resources/aws-refarch-drupal/
+https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-quick-start-guide-drupal.html
+https://medium.com/blogfoster-engineering/running-cron-jobs-on-aws-lambda-with-scheduled-events-e8fe38686e20
+https://www.tothenew.com/blog/how-to-use-aws-lambda-in-drupal/
+https://medium.com/@dattatreya361/how-to-schedule-a-cron-job-using-aws-lambda-and-eventbridge-8e8699b6c8de
